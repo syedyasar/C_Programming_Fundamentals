@@ -1,0 +1,72 @@
+Introduction
+--------------------
+1)  'C'  language   is  designed  by  Dennis  Ritchie  in  the  year  1968  at  Bell  lab's,  USA.
+
+2)  'C'  is  designed  in  view  of  Unix  opearting  system
+
+3)  'C'  is  called  System  Software  Language.
+
+4)  'C'  is  best  suited  for  system  software  applications  like  design  of  compiler, assembler,  linker,
+      loader,   driver, Operating  System  and   so  on
+
+5)  'C'  is  not  used  for  business  applications, data  base  applications,web  applications and so on.
+     In other words,  'C'  is  used  for  system  software  applications
+
+6)  'C'  is  called  middle  level  language
+      i.e.  'C'  is  used  to  design  application  programs(factorial  of  a  number,gcd  of  2  numbers ,  sorting of
+      numbers, ......)  and  system  programs  (desgining  compiler , driver , O.S,....)
+
+
+1) Every  'C'  program  must  contain  main  function.
+    In  otherwords,  'c' program  can  not be executed without main function
+
+2) '\n'    means  end  of  a  line  i.e.  Go  to  next  line
+
+3) printf  means  write value to  console(monitor)
+
+
+4) printf    is    a    pre-defined  function  in    <stdio.h>    file  (Standard input output header  file)
+
+5)  //  means  comment   and  comments  are  not   executed
+     i.e. comments  are  ignored  by  the  computer
+
+6) ;  is  called  statement  terminator
+    i.e.  end  of  a  statement
+
+7)  //  is  single  line  comment
+
+8)  /*
+     ....
+     ....
+     ....
+     */   is  multiline  comment
+
+
+String
+----------
+1) It  is  a  collection  of  characters  terminated  by  '\0'  where    '\0'  is  null  character
+
+2) '\0'  means  end  of  the  string.
+
+3) String  may  contain  alphabets, digits  and  special  characters  .
+    Therefore  String  is  also  known  as    alphanumeric.
+
+4) String  must  be  enclosed  in  double  quotes
+
+5) It  is  system  which  appends  '\0'  at  the  end  of  the  string  (but  not  programmer)
+
+6) "Hyd"  contains  4  characters  and  4th  character  is  '\0'.
+
+7) String  is  processed  until  '\0'
+
+8) Characters  beyond  '\0'  are  not  processed
+     i.e.  processing  stops  when  '\0'  is  reached.
+
+9) Empty  string ( "" )   contains  single  character  i.e.  '\0'
+    Eg:
+    a)  "Rama  Rao"
+    b)  "9247"
+    c)  "+-$"
+    d)  "A2#"
+    e)  ""  (Empty  string)
+
