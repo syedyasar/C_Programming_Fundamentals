@@ -1,0 +1,61 @@
+'C'  words
+-----------------
+1)  Reserved  word    or      Keyword
+2)  User  defined  word    or    Identifier
+
+Keyword
+---------------
+1) There  are  32  keywords  and they are   auto, break, case, switch, if, else, int, float, const  and  so  on
+
+2)  Each  keyword  has  a  special  meaning  in  the  computer
+
+3) They  must  be  used  to  convey  that  meaning  only
+
+4)  They  can  not  be  used  as  user  defined  words
+
+5)  They  are  system  defined  words.
+
+6)  They  must  be  written  in  lower  case  letters
+
+7) Variable name , array name  , function name  , ..... can  not  be  keywords
+
+
+User  defined  word  or  Identifier
+-------------------------------------------------------
+1)  It  has  no  meaning  in  the  computer
+
+2)  It  is  defined  by  programmer
+
+3)  It  is  used  for  variable  name, function  name, array  name  and  so  on
+
+Rules:
+1)  First  character  can  be  alphabet  or  underscore
+
+2)  Second  character  onwards,  can  be  alphabet, digit  and  underscore
+
+3)  Special  characters  are  not  allowed  except  underscore
+
+4)  It  can  contain  maximum  of  31  characters  and   any  excess  characters  are  ignored
+
+5)  It  can  be  in  upper, lower  and  mixed  case  letters
+
+6)  It  can  not  be  a  keyword
+
+Eg:
+1)  sum
+2)  product
+3)  abc123
+4)  ab__12__cd
+5)  HYD
+6)  hyd
+7)  Hyd
+8)  __xyz
+9)  Auto
+
+Invalid :
+1)  23abc  ---> Error becoz  1st character  can  not  be   digit
+2)  Rama  Rao  ---> Special  character  (space) is not allowed
+3)  p.v.n.rao    ---> Special  character  ('.') is not allowed
+4)  ab,cd    ---> Special  character  (',') is not allowed
+5)  ab-cd    ---> Special  character  ('-') is not allowed
+6)  auto  ---> It is keyword but not user defined word
