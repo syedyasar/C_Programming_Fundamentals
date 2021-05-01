@@ -1,0 +1,20 @@
+Data  types
+-------------------
+Data  type  means  what  type  of  value  that  variable  can  hold
+1)  int    x; ---->  x  is  variable  of  type  int  and   variable  x  can  hold  int  value  only  but  not  float
+
+2)  float  m;  ---->    m  is  a  variable  of  type  float  and   variable  m  can  hold  float  value  only  but  not integer
+
+There  are  9  datatypes
+1)  short
+2)  int
+3)  long
+4)  long  long
+5)  unsigned
+6)  float
+7)  double
+8)  char
+9)  unsigned  char
+
+Note: 'C'  does  not  support  string datatype.
+
