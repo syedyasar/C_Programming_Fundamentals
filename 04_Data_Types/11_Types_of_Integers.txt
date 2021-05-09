@@ -1,0 +1,67 @@
+
+Types  of  integers
+-------------------------------
+1) Decimal  integer
+2) Octal  integer
+3) Hexa  Decimal  Integer
+
+
+Decimal  integer
+---------------------------
+1) Base  is  10
+
+2) Format  is  %d
+
+3) Decimal  number  can  contain  digits  0  to  9
+
+Valid  ---->    9248
+
+Octal  integer
+-----------------------
+1) Base  is  8
+
+2) Format  is  %o
+
+3) Octal    number  can  contain  digits  0  to  7
+
+4) Digits  8  and  9  are  not  allowed  in  octal  number
+
+5) Octal  number  starts  with  0
+
+Valid:      06247
+Invalid  :
+a)  6247  ----> must  start  with  0
+b)  09248  ----> can  not  contain  8  and  9
+c)  0X1234  ---->  can  not  start  with  0X
+
+
+Hex  decimal  integer
+-------------------------------------
+1) Base  is  16
+
+2) Format  is  %x  or  %X
+
+3) Hexa  decimal   number  can  contain  digits  0  to  9  and  alphabets  A  to  F  (or)   a   to   f
+
+4) A  is   10,  B is  11,  ..... F  is   15
+
+5) Hexa  decimal     number  starts  with  0X  or  0x
+
+
+Valid:
+a)  0X9248
+b)  0XBEEF
+c)  0XA7B9
+d)  0xa7b9
+
+
+              Decimal                                 Octal					             Hex  dec
+	    ---------------------------------------------------------------------------------------------------------------------------------------
+	    Base  :  10                             Base  :  8					Base  :  16
+
+	    Format  :  %d                         Format  :  %o                                Format  :  %X  or  %x
+
+	    Valid  digits :  0  to  9            0  to  7                                          0  to  9  and   A(a)  to  F(f)
+
+	    Starts  with  :  nothing             O                                                    0X  or  0x
+	    ---------------------------------------------------------------------------------------------------------------------------------------
