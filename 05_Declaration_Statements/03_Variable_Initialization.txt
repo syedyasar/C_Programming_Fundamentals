@@ -1,0 +1,25 @@
+Variable  Initialization
+-------------------------------------
+1)    int    a = 25;
+       Name  of  the  variable  :  a
+       Value  of  the  variable  :  25
+       Size  of  the  variable    :   4B(depends  on  compiler)
+       Address  of  the  variable  :  &a  and    &  is  address  operator
+       &a  is  address  of  variable  a  (may  be  1000)
+
+2)   int  x; --->  Variable  x  contains  garbage  value  becoz  it  is  not  initialized
+
+3)  float  m = 10.8;
+     Name  of  the  variable  :  m
+     Value  of  the  variable  :  10.8
+     Size  of  the  variable  :  4B
+     Address  of  the  variable  :  &m
+
+4)  char  ch = 'g';
+     Name  of  the  variable  :  ch
+     Value  of  the  variable  :  g
+     Size  of  the  variable  :  1B
+     Address  of  the  variable  :  &ch
+	 
+	 
+	 
