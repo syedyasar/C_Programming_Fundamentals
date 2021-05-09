@@ -1,0 +1,16 @@
+Operators
+-----------------
+1)  Arithemetic  operators
+2)  Relational  Operators
+3)  Logical  Operators
+4)  Assignment  operators
+5)  Increment  and  Decrement  opeartors
+6)  sizof()  operator
+
+Arithemetic  operators
+-------------------------------------
+1)   +
+2)   -
+3)   *
+4)   /
+5)   %
