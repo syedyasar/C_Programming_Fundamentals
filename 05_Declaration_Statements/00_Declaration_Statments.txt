@@ -1,0 +1,21 @@
+Declaration  statements
+-----------------------------------------
+1) Creating  a  variable  and  allocation  of  memory  to  the  variable  is  known  as  declaration.
+
+2)  int  i  ;    ------>  Variable  'i'  is  created  and  4B  of  memory  is  allocated  to  variable  'i'
+     float  f;   ------>  Variable  'f'  is  created  and  4B  of  memory  is  allocated  to  variable  'f'
+     char  c;   ----->  Variable  'c'  is  created  and  1B  of  memory  is  allocated  to  variable  'c'
+     The  above  3  statements   are  declaration  statements.
+
+3) Variables  can  not  be  used  without  declaration
+     i.e.  Declare  variables  first  and  then  use  them
+
+4) Variables  can    be  declared  any  where  in  the  program  but  not  necessarily  at  the  begining (in  gcc
+    Compiler)
+
+5)  Variable  must  be  declared  before  its  first  use
+
+6) If  a  program  contains  10  variables,  each  of  the  10  variables  must  be  declared  before  their  usage.
+
+Note:
+Variables  must  be  declared  at  the  begining  in  turbo  'c'  compiler  but  not  in  gcc  compiler
