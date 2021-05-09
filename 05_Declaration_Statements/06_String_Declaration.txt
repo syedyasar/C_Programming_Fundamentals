@@ -1,0 +1,40 @@
+String  declaration
+--------------------------------
+      int     i;    --->  int  variable  declaration
+      float  f;    --->  float    variable  declaration
+      char  c;   --->  char      variable  declaration
+      string s;  --->  Error  becoz  'C'   does  not  support  string  data  type
+
+How  to  declare  a  string  in  'c'  lang  ?
+-----------------------------------------------------------------
+1)  char      a[20];  -->  string  declaration
+
+2)  [ ]  is  array  operator  and   char  array  is  used   to  declare  a  string.
+
+3)  'a'  is  an  array  which  can  hold  maximum  of  19  character  string  and   one  location  is  left   for  '\0'
+     ('\0'  means  end  of  the  string)
+
+
+                          char      a						char    a[20]
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+1) It  is  a  character  declaration				1)  It  is  a  string  declaration
+
+2) Variable  'a'  can  hold  single  character		2)  Array  'a'  can  hold  more  than  one  character i.e. 20 chars
+
+3) Variable  'a'  takes  1B  of  memory  space     	3)  Array  'a'  takes  20B  of  memory  space
+
+4) Address  of  variable  is  &a				    4)  Address  of  array  is  &a  and  also  'a'
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1)  Array  name  itself  is  address.
+
+2)  If  array  name  is  'a',  address  of  array   is  also  'a'
+
+3)  &a  is  also  ok  but    &  is  optional  for  array
+
+
+
+Note  :
+1) Variable  is   required  to  represent  integer , float  or   character
+
+2) Array (i.e. Char  array)  is   required  to  represent   a  string
