@@ -1,0 +1,67 @@
+
+Logical  operators
+--------------------------------
+1) &&  ---> and  operator
+2)  ||   ----> or  operator
+3)   !   ---> not  operator
+
+
+&& (and  operator)
+-------------------------------
+1)  true  &&  true  is  true
+     true  &&  false  is  false
+     false  &&  true  is  false
+     false  &&  false  is  false
+
+2) &&  operator does  logical  multiplication
+
+3) It  is  a  binary  operator  becoz it  has  2  operands.
+
+4) If  at  least  one  operand  is  false,  result  is  false.
+    If  both  the  operands  are  true,  result  is  true
+
+
+|| (or operator)
+------------------------
+1)  true  ||  true  is  true
+     true  ||  false  is  true
+     false  ||  true  is  true
+     false  ||  false  is  false
+
+2) ||  operator  does  logical  addition
+
+3) It  is  also  binary  operator  becoz  it  has  2  operands.
+
+4) If  at  least  one  operand  is  true,  result  is  true.
+    If  both  the  operands  are  false,  result  is  false
+
+
+! (not operator)
+-------------------------
+1) !true  is  false
+    !false  is  true
+
+2) !  operator  does  complement  operation
+
+3) It  is  unary  operator becoz  it  has  only  one  operand.
+
+Note:
+6  8  --->     is  binary  operator
+-7  ---> -  is  unary operator
+
+
+Short  circuit  Evaluation
+------------------------------------------
+1)  9 >= 12  &&    6 != 8  --->    false
+     6 != 7  ||  9 == 8    --->  true
+
+2) 2nd  operand  of  &&  operator  is  not  evaluated  when  first  operand  is  false.  This  is  becoz
+    false  &&  anything  is  false
+
+3) Similarly   2nd  operand  of  ||  operator  is  not  evaluated  when  first  operand  is  true.  This  is  becoz
+    true  ||  anything  is  true
+
+4)  This  is  called  short  circuit  evaluation
+
+5)  Processor  time  is  saved  due  to  short  circuit  evaluation
+
