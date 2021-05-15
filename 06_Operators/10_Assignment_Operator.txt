@@ -1,0 +1,32 @@
+Assignment  operators
+--------------------------------------
+1)  =
+2) +=
+3)  -=
+4) *=
+5)  /=
+6) %=
+
+
+Assignment  Statement
+---------------------------------------
+1)  a = 25; --->  Value  25  is  assigned  to  variable  'a'  and  result  of  the  statement  is  also  25
+                         i.e.  a = 25  leads  to  25
+
+2)  a = 7;
+     b = a;   --->  Value  of  variable    'a'  is  assigned  to    'b'
+                        i.e.  both  the  variables  contain  same  value  7
+                        Result  of  the  statement  is  also  7
+                        i.e.  b = a  leads  to    7
+
+3) a = 4;
+    b = 5;
+    c = a + b * 6;  --->  Expression  is  evaluated  and  result  is  assigned  to  variable  c.  So  c  is  34
+                                  Result  of  the  statement  is  also  34
+                                  i.e.  c = a + b * 6  leads  to  34
+
+4) =  is  an  assignment  operator    and   Statement  which  contains  =  is  an  assignment  statement.
+
+5)  op1 = op2  --->  op2  is  evaluated  and  result  is  assigned  to  op1.
+
+6) op2  can  be  value, variable    or  expression.  But  op1  must  be  variable  only
