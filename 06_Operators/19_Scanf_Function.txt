@@ -1,0 +1,14 @@
+scanf  function
+-------------------------
+1) It  is  an  input  function
+
+2) It  is  used  to  read  inputs  from  the  keyboard  into  memory  variables
+
+3) It  is  defined  in  <stdio.h>  file  (standard  input-output  header  file)
+
+4) It  is  call-by-address  function.  Hence  '&'  is  mandatory  in  scanf  function
+
+5) Syntax  ---->  scanf("Control  String"  ,  &variable1  , &variable2 , &variable3 , ....);
+
+6) Control  string  contains  formats  like  %d %f %c  and  so  on
+
