@@ -1,0 +1,19 @@
+a = 7		a = 7		a = 7	a = 7
+b = ++a		b = a++		b = --a	b = a--
+--------------------------------------------------------------------------------------
+a = 8	        a = 8		a = 6	a = 6
+b = 8		b = 7		b = 6	b = 7
+
+
+			Pre increment									post increment
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1) ++a is preicrement								1) a++  is post increment
+
+2) Immediate increment							        2) Delayed increment
+    i.e.Increment 'before' the statement is executed		    i.e. Increment 'after' the statement is executed
+
+3) ++a means increment 'a' by 1 and the result		        3) a++ means increment 'a' by 1 but the
+     of ++a is new value								    result of a++ is old value
+
+4) If variable 'a'  is  7,  'a' becomes 8 after execution		4) If variable  'a'  is 7,  'a' becomes 8 after execution
+    of ++a and result of ++a is also  new value 8			    of a++ but result of a++ is old value 7
