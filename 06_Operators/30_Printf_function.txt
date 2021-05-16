@@ -1,0 +1,14 @@
+printf  function
+------------------------
+1)  It  is  an  output  function
+
+2)  It  is  used  to  write  values  to  monitor i.e.console
+
+3)  It  is  also   defined  in  <stdio.h>  (standard  input  output  header  file)
+
+4)  printf("Control  String" , variable1 , variable2 , ....);
+     control  string  contains  formats  like  %d %f %c.......
+
+5)  printf  is  call-by-value  function.  Hence  &  is  not  required  in  printf
+
+6)  printf  function  is  used   to  write   data  in  memory  to  monitor
