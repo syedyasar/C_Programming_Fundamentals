@@ -1,0 +1,15 @@
+
+Conditional    operator    (?    :  )
+-------------------------------------------------------
+1) Variable   =   Exp1  ?  Exp2  :  Exp3;
+
+2) If    Exp1    is    true ,     Exp2    is    evaluated    and      If    Exp1    is    false ,     Exp3    is    evaluated
+
+3) Variable    contains    result    of    exp2    or    exp3 ,     it    all    depends    on    exp1
+
+4) ?   :    is    a    ternary    operator      becoz    there  are      3    operands
+
+Note:
+1)  -6        -->    '-'   is    unary    operator  becoz    there  is    single    operand
+
+2)  7  *  8    -->    '*'    is    binary    operator    becoz    there    are    2    operands
