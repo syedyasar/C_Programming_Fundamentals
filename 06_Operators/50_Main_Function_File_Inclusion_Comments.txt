@@ -1,0 +1,124 @@
+main  function
+--------------------------
+1)   main()
+      {
+		stmt1;
+		stmt2;
+		stmt3;
+		....
+      }
+
+2) Every  'C'  program  must  contain  main  function
+
+3) It  is  not  possible  to  compile  and  run  a  program  without  main  function
+
+4)  main  is  mandatory  in  every  'C'  program
+
+5)  main  is  a  special  name  and   It  is  not   a    user  defined  word  nor  key  word
+     Eg:   auto  -->  Keyword
+             sum  -->  User  defined  word
+             main  -->  Special  name
+
+6)  It  is  operating  system(OS)  which  calls    main  function  as  soon  as  program  is  executed
+     i.e.  define  main   function ,  leave  it   and   OS  executes  main  function
+
+7)  int  main(), void  main()  and  main()  are  same
+
+8)  Main()    ---->  Error  becoz  main  must  be  in  lower  case
+     {
+     }
+
+9) main  is  a  user  defined  function   but  not  predefined   function
+    There is no  header  file  for main function
+	
+	
+	File  Inclusion
+------------------------
+1)  #include  <stdio.h>
+     #include  <conio.h>
+     main()
+     {
+	   statements
+     }
+
+2) When  scanf  and  printf  functions   are  used,  include  <stdio.h>  file.
+
+3) Similarly,  when  sqrt  and  pow  are  used,  include  <math.h>  file
+
+4) In  general,  function  can  not  be  used  without  including  corresponding    file
+    i.e.  Include  the  file  and  then  use  functions  of  the  file
+
+5) #include  is  usually   written   at  the  begining  of  the  program
+
+6) There  is  no  ;  at  the  end  of  #include  becoz it  is  not  a  statement
+
+7) #include  file ---->  file  may  contain  functions, macros, structures  and  so on
+                          ---->   All  of  them  are  substituted  by  preprocessor  at  compile  time
+
+8) # is preprocessor directive ----> Invitation   to     preprocessor
+
+9) Preprocessor  job  is  expanding  the  file
+     i.e.  File  contents  are  substituted
+
+10) #include  <file> ----> File  is  searched  in  every  directory(or  folder)  except  current  working
+                                     directory(cwd)
+
+11) It  leads  to  error  when  file  is  in  cwd.
+
+12) Therefore  <>   are used  when  file  is  not  in  the  cwd
+
+13) Header  files are  not  in  cwd  and  hence  <>   are  used  for  header  files
+
+14)  #include  "file" ---> File  is  searched   in  every  directory(folder)  starting  from  current  working
+                                      directory(cwd)
+				      i.e.  file  is  searched  in  cwd  first,  if  it  is  not  found  in  cwd,  file  is  searched
+                                      in  other   standard    directories.
+
+15) Quotes(")  are used  when  file  is  in  cwd.
+
+16) n  directories  are  searched  when  ""  are  used  and
+      n - 1  directories  are  searched  when  <>  are  used
+
+17)  #include  "c: \ sri \ file"   ---->  File   is  searched  in  the  specified  path  i.e.  c: \ sri
+
+18) File  is  searched  in  only  one  directory(sri)  when  path  is  specified  and    path  is  used  when           we  know  the  location  of  the  file
+
+19)  #include  "d:\file"
+        c:  -->  Hard  disk
+	d:  -->  Usually  cd  drive      but  not  always
+	e:  -->  Usually  pen  drive  but  not  always
+
+20) File  can  be  searched  on  Hard  disk , cd ,  pen  drive , ......  by  specifying  the  drive  name
+
+Comments
+----------------
+1)  //  is  used    for  single  line  comment
+
+2)  /*
+                ...
+	        ...
+                ....
+    */  is  used   for  multiline  comment
+
+3) Comments  are  ignored  by  compiler  i.e. Comments  are  not  compiled (i.e. Translated)
+
+4) There  are  no  comments  at  runtime(i.e  execution  time)
+
+5)  Comments  are  used   whereever  clarifications  are  needed
+
+6) Comments  improve  program  clarity  and  readability
+
+7)  .c  file  may  contain  comments  but  not  .exe  file  becoz  comments  are  ignored
+
+8) Comments  can  be  written  any  where  in  the  program(begining,end  or  middle  of  the  program)
+
+9)  Nested  comments  are  not  allowed  i.e.  Don't  write  comment  in  a  comment
+            /*
+                                .....
+		/*
+		              ...
+		*/
+		....
+          */
+
+10) Nested  single  line  comments   are  allowed
