@@ -1,0 +1,9 @@
+Flavors  of   if  statement
+------------------------------------------
+1)  if  with  else
+
+2)  if  without  else
+
+3)  else  if  ladder
+
+4)  nested  if  --->  if  within  if  is  called  nested  if
