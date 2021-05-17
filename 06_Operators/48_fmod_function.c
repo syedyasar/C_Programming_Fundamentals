@@ -9,7 +9,6 @@ main()
 }
 
 
-
 /*
 1) fmod  function   does  float  division  and  returns  float  remainder
 
