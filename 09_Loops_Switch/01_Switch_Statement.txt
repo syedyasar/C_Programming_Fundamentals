@@ -1,0 +1,61 @@
+switch  statement
+-------------------------------
+1) When  there  are    too  many  if  statements ,  switch  statement  is  used   as  an  alternative
+
+2) switch  provides  more  clarity  and  better  readability
+
+3) if   statement  is  used  when  conditions  are  involved    and
+    switch  statement  is  used   when  selection  is  involved
+
+4) Every  switch  can  be  replaced  with  if-else  but  vice-versa  may  not  be  possible  always
+
+Rules:
+-----------
+1) switch  takes  Variable  or  Expression
+     Eg 1  :  switch(Variable)
+     Eg 2  :  switch(Expression)
+
+2) switch  variable  can  be  int  or  char  but  not  float
+    Eg  :    float  a;
+               switch(a)  --->   Error  becoz  variable  'a'  is  float
+               {
+	       }
+
+3) case  label  can  be  integer  or  character
+     Eg 1   :   case    7 :  --->  ok
+     Eg 2   :   case   'g' : ----> ok
+     Eg 3  :    case    10.8 :  --->  Error  becoz  float  is  not  allowed
+     Eg 4  :    case    "Hyd":  ---> Error  becoz   string  is  not  allowed
+
+4) case  label   can  not  be  duplicated
+    Invalid :    case    7 :
+                     case    7 :
+
+5) There  must  be  at  least  one  space  between  case  and  label  otherwise  default  is  executed
+
+break  statement
+-----------------------------
+1)  When  break  statement  is  executed,  remaining  cases  are  skipped  and  control  goes  out  of  switch
+
+2)  Next  statement  executed  after  break  is  statement outside  switch
+
+3)  If  break  statement  is  omitted,  statements  of  next  case  are  also  executed  which  is  not  desirable
+
+4)  Thus  execution  becomes  sequential  until  break  is  found
+
+5)  break  is  used  to  suspend  sequential  execution
+
+6)  Every  break  is  mandatory   but   last  break  is  optional
+
+7)  switch  braces  are  mandatory  but  case  braces  are  optional
+
+
+default
+------------
+1)  It  is  executed  when  none  of  the  cases  are  executed
+
+2)  It  can  be  used  anywhere  inside  switch   i.e. At  begining, middle  or  end  of  switch
+
+3)  There  can  be  switch  without  default  i.e.  default  is  optional
+
+Note  :  switch , case , break  and  default  are  keywords
