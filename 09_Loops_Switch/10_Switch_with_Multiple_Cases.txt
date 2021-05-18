@@ -1,0 +1,20 @@
+switch  with  mutiple  cases
+-----------------------------------------------
+switch(a + b * c)
+{
+	case      7 :
+	case     -6 :
+	case      0 :  	stmt1;      --->  They  are  executed  when  result  of  a + b * c  is    7,  -6  or  0
+			        stmt2;
+			        stmt3;
+			        break;
+	case  -10 :
+	case  15  :	stmt4;     --->   They  are  executed  when  result  of  a + b * c  is    -10  or  15
+			        stmt5;
+			        stmt6;
+			        break;
+	default:  	        stmt7;    --->   They  are  executed  when  result  of  a + b * c  is    None  of  the  above    5  values
+			        stmt8;
+			        stmt9;
+			        break;
+}
