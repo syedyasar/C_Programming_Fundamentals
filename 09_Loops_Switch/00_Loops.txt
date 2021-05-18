@@ -1,0 +1,148 @@
+Loops    or    Control  Structures    or   Iterative  Statements
+---------------------------------------------------------------------------------------------------
+1)  While  loop
+2)  do ... while  loop
+3)  for  loop
+
+while  loop
+-------------------
+1) while(condition)
+    {
+ 	stmt-1;
+	stmt-2;
+	 .....
+	stmt-m;
+    }
+    stmt-n;
+
+2) Statements  inside    while  loop  are  executed  repeatedly  as  long  as  condition  is  true
+
+3) When  condition  becomes  false,  control  goes  out  of  loop  and  statements  outside  the  loop  are  executed
+
+4) Statements  inside  while  loop  are  executed  several  times  but  statements  outside  loop  are  executed
+    only  once
+
+5) While  loop  is  never  executed  in  case  condition  is  false  for  the  first  time  itself
+
+6) While  is  pre-tested  loop  or  entry-tested  loop
+    i.e.  condition  is  tested  at  the  begining  of  the  loop
+
+7) While  loop   is  used  when  condition  is  involved
+
+8) There is  no  semi-colon  at  the  end  of  the  condition
+
+				 if                                                                                     while
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+1) if(condition) 								  1)  while(condition)
+    {											        {
+	statements;									    stataments;
+    }											        }
+
+2) Statements  inside    if  are  executed  only  once    2)  Statements  inside  while  loop  are  executed
+    provided  condition  is  true		                 	      several  times  until  condition  is  false
+
+3) It  is  one  time  execution	         				3)  It  is  repeated  execution
+
+4)  else  is  allowed								4)  else  is  not  allowed
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+do...while  loop
+-------------------------
+
+1)  do
+     {
+    	stmt-1;
+    	stmt-2;
+	stmt-3;
+	    ...
+	stmt-m;
+     }
+     while(condition);
+     stmt-n;
+
+2) Statements  inside  do...while  loop  are  executed  repeatedly  as  long  as  condition  is  true
+
+3) When  condition  becomes  false,  control  goes  out  of  loop  and  statements  outside  the  loop  are  executed
+
+4) Statements  inside  do...while  loop  are  executed  several  times  but  statements  outside  loop  are  executed
+    only    once
+
+5) do...while  loop  is  executed  at  least  once  ,  even  when  condition  is  false  for  the  first  time.
+    This  is  because  condition  is  tested  after  execution  of  statements
+
+6) do...while  is  post-tested  loop  or  exit-tested  loop  becoz  condition  is  tested  at  the  end  of  the  loop
+
+7) do...while  loop   is  used  to  perform  action  first  and  then  conditional  testing
+
+8)  ;  after  the  condition  indicates  end  of  do..while  loop
+
+				while  loop									do  ...  while  loop
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1) It  is  pre-tested    loop							1)  It  is  post-tested  loop
+     i.e.  condition  is  tested  'before' execution                         i.e.  condition  is  tested  'after' execution  of
+     of  statements									      of  statements
+
+2) It  is  not  executed  when  condition  is  false                 2)  It  is  executed  at  least  once,  even  when
+    for  the  first  time  itself					                     condition  is  false  for  the  1st  time
+
+3) End  of  while  loop  is  denoted  by  }			        3)  End  of  do..while  loop  is  denoted  by    ;
+
+4) There  is  no  semicolon  at   the  end  of  the                  4) There  is  semicolon  at  the  end  of  the  condition
+    condition
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+for  loop
+--------------
+1) for(Initialization ; Condition  ;  Increment  or  Decrement)
+    {
+      		stmt-1;
+       		stmt-2;
+      		stmt-3;
+		.....
+		stmt-m;
+    }
+    stmt-n;
+
+2) Initialization  is  executed  first
+
+3) Condition  is  tested  next ,  if  it  is  true ,  statements  inside  for  loop  are executed
+
+4) Increment  or  decrement  is   executed  after  execution   of  statements
+
+5) Condition  is  tested  again,  if  it  is  true,  steps  3  and  4  are  repeated
+
+6) If  condition  is  false,  control  goes  out  of  loop  and   statements  outside  loop  are  executed
+
+7) Statements  inside  for  loop  are  executed  repeatedly  as  long  as  condition  is  true.
+
+8) The  moment  condition  is  false,  control   goes  out  of  loop  and  statements  outside  the  loop  are
+    executed
+
+9) for  loop  is  also  pre-tested  or   entry-tested  loop  becoz  condition  is  tested  at  the  begining  of  loop.
+
+10) for  loop  is  not  executed  in  case  condition  is  false  for  the  first  time  itself
+
+11) for  loop   is  used   to  execute  a  group  of  statements  n  times
+
+12) Above  for  loop  can  also  be  written  as:
+      Initialization;  ---> Initialization  can  be  made  before  for  loop,
+      for(;condition;)  --->  2    semicolons  are  madatory
+      {
+		stmt-1;
+		stmt-2;
+          	stmt-3;
+		.....
+		stmt-m;
+		Increment  or  Decrement; --->  can  be  made  at  the  end  of  for  loop
+      }
+
+Note:
+1) All  the  3  loops  are  almost  same,  except  pre-tested  and  post-tested.
+
+2) Any  loop  can  be  replaced  with  any  other  loop
+    Eg  :  for  loop  can  be  replaced  with  while  loop  or  do-while  loop,
+             while  loop  can  be  replaced  with  for  loop  or  do-while  loop  and
+             do-while  loop  can  be  replaced  with  for  loop  or  while  loop
+
+3)  for, while  and  do  are  keywords
