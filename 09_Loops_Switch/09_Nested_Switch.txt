@@ -1,0 +1,24 @@
+Nested  switch
+------------------------
+swicth  inside  another  switch  is  called  nested  switch
+
+switch(a)
+{
+	case  1:  switch(b)
+		       {
+				case  1:	stmt1;  ---> They are executed when  a = 1 and  b  = 1
+						stmt2;
+						stmt3;
+						break;   ---> Go  out  of   inner  switch
+				case  2:  	stmt4;  ---> They are executed when a = 1 and  b = 2
+						stmt5;
+						stmt6;
+						break;  ---> Optional  becoz  it is last break of inner switch
+	              } ---> inner  switch
+	    	      break;  ---> Go  out  of  outer  switch
+	case  2  :		stmt7;    ---> They are executed when  a = 2
+				stmt8;
+				stmt9;
+				break;  ---> Optional  becoz  it is last break of  outer switch
+}
+stmt10;
