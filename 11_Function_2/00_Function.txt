@@ -1,0 +1,201 @@
+Function
+--------------
+1) Program  is  a  collection  of  functions    and    function  is  a  collection  of  statements.
+
+2)  Every  'C'  program  must  contain  at  least  one  function  i.e.  main  function
+
+3) In other words,   main  is  mandatory  in  every  'c'  program
+
+4) Program  can  not  be  compiled  nor    executed  without  main  function
+
+5) Functions  of  the  program  can  be  defined  in  any  order
+
+6) Functions  are  executed  in  the  order  in  which  they  are  called  but  not  the  order  in  which  they
+    are  defined
+    i.e.  order  of  calls  is  important  but  not  order  of  definitions
+
+7) main  function  can  be  defined  anywhere  in  the  program  but  execution  starts  at  main    irrespective    of
+     where  it  is  defined
+
+8) It  is  operating  system(os)  which  calls  main  function  the  moment  program  is  executed.
+
+9) main  function   is  defined  by  programmer  and    called  by  opearting system
+
+10)  main  is   user  defined  function  but  not   predefined and  hence   there  is  no  header  file  for  main   function
+
+Types  of  functions
+--------------------------------
+Pre-defined  function
+----------------------------------
+1) It  is  already  defined  in  the  system
+
+2) Just  call  the  function
+
+3) Include  an  appropriate  file  before  calling  the  function
+    Eg :  scanf() , sqrt() , getch() , system() , ....  are  pre-defined  functions
+
+
+
+User  defined  function
+-------------------------------------
+There  are  3  parts
+1)  Function  definition
+2)  Function  call   or    Invoking  the  function
+3)  Function  prototype   or    Function  declaration
+
+Function  Definition
+---------------------------------
+1)  returntype  funname(declaration  of  parameters)
+     {
+	variable    declarations;
+	statements;
+	return  something;
+     }
+
+2) Writing  code( or  statements)  in  the  function  is  nothing  but  defining  the  function
+
+3) It  informs  system  about  what  function  does
+    i.e.  It  specifies  the  task  performed  by  the  function
+
+
+Function  Header
+----------------------------
+1) int   max(int  x, int  y) ---->  Function  Header
+    {
+    }
+    main() ----> Function  Header
+    {
+    }
+
+2)  It  consists  of  return  type , function  name  and  parameters  declaration
+
+3)  There  is  no  ;  at  the  end  of  function  header  becoz   it  is  not  a  statement
+
+
+Parameter  (or)  Argument
+----------------------------------------------
+1)  It  is  input  to  the  function
+    Eg  :  sqrt(25);  --->  25  is  input  to  sqrt  function
+    Eg  :  pow( 2 , 3);  -->  2  and  3  are  inputs  to  pow  function
+    Eg  :  getch();  -->  No  inputs  to  getch    function
+
+2)  Function  may  have  0,1  or  more  than  one  parameter
+
+3)  Number   of  parameters  to  a  function  depends  on  the  task  performed  by  the  function
+     Eg :  To  find  largest  of  3  numbers,  function  must  have  3  parameters
+              i.e.  max(a,b,c)
+     Eg  :  To  find  a^b,  function  must  have  2  parameters  i.e.  pow(a,b)
+     Eg  :  To  find  sqrt  of    a  number,  one  parameter  is  necessary  i.e.  sqrt(x)
+
+
+
+Parameter  and  Variable
+-----------------------------------------
+1) Parameters  are  declared  in  the  function  header  and   variables  are  declared  inside  the  function
+
+2) Parameter  is  input  to  the  function  but  not  variable
+
+3) Values  are  sent  to  parameters  from  the  function  call  but  not  to  variables
+
+4) Both  parameters  and  variables  are  lost  after  function  terminates  and
+    they  can  not  be  used  by  a  different  function
+
+5) void  f1(int   a , int   b , int  c)  ---> a , b , c  are  parameters  becoz  they  are  declared  in  function  header
+    {
+	int  x , y , z;  ---> x,y,z  are  variables   becoz  they  are  declared  inside  the  function
+    }  --->  3  parameters  and  3  variables  are  lost
+
+    main()
+    {
+         	f1(10 , 20 , 30);
+    }
+    main  function  can  not  use  a , b , c  and  x , y , z  becoz   they  are  already  lost
+
+
+Function  call  or  Invoking(calling)  the  function
+-------------------------------------------------------------------------------
+1) A  function  is  called  by  its  name
+
+2) Function  call  involves  branching
+     i.e.  Control  branches  to  the  called  function  and  executes  it
+
+3) Control  returns  to  calling  function  after  called  function  terminates
+
+4) Statement  following  the  function  call  is  executed  after  called  function  terminates
+
+5) Sequential  execution  is  suspended  due  to  function  call
+
+6) Parameters  in  the  function  call  are  sent  to  the  function
+
+7) Value  returned  by  the  function  is  returned  to  function  call
+
+8) Statements  of  the  function  are  executed  only  when  function  is  called
+     i.e.  Function  is  not  executed  unless  it  is  called
+
+9) Every  function  requires  a  call  i.e.  defining  the  function  is  not  enough  and   it  must  be  called
+
+10) main  function  is  automatically  called  by  O.S.  as  soon  as   program  is  executed
+
+11) int  x = pow(2,3);  --->  It  is  a  function  call  to  pow()  and   function  returns  8. So  x = 8
+
+12) sqrt(25);  -->  It  is  a  function  call  to  sqrt  and   function  returns  5  but  5  is  ignored  becoz   there  no  LHS
+                            variable  to  sqrt
+
+13) int  ans = max(a , max(b , c));  -->  Function  call  in  function  call  is  nested  call.
+							         Inner  call  is  executed  before  outer  	call.
+                                                                 Variable  ans  contains  largest  of  3  numbers
+
+14) int  ans = max(max(a , b) , max(c , d));  -->  Last  parameter  is  first  evaluated  due  to  stack(LIFO).
+      Therefore  function  calls  are  max(c , d ) , max(a , b)  and  max(result , result).
+      Variable  ans  contains  largest  of  4  numbers
+
+Function  Prototype  or  Function  declaration
+---------------------------------------------------------------------------
+1)   int  max(int    x,int      y);
+                     or
+      int     max(int , int);
+
+2)  It  is  a  description  of  the  function
+
+3)  It  informs  about  name  of  the  function , number  of  parameters  to  the  function , types  of  parameters
+     and  what    function      returns
+     Eg  :  max  is    a  function  with  2  int  parameters  and  returning  an  int  value
+
+4) Parameter  names  are  optional  in  prototype  but  parameter  types  are  mandatory
+
+5) Prototype  is  a  replica(or duplicate)  of  function  header
+
+6)  int      a;   --->  Variable  declaration
+     int      b(); --->  function  declaration
+     Variable  declaration  is  memory  allocation(int-4B,float-4B,char-1B)  but   not  function  declaration.
+     It  is  only  for  describing  the  function
+
+7) Prototype  is  optional  when    function  is  already  defined  before  it  is  called
+    Eg :  float    f1()
+            {
+	    }
+	   main()
+	   {
+		float  f1(); ---> optional
+ 		....
+		f1();  ---> function  can  be  called  directly  without  prototype
+  	   }
+	   Since  f1  is  already  defined,  It  can  be  called  without  prototype
+
+8) Prototype  is  mandatory  when  function  is  called  before  it  is  defined
+    Eg :   main()
+             {
+	   	float    f1();  ----> Mandatory
+		.....
+		f1();  --->  function  call  leads  to  error  without  prototype
+		....
+	   }
+           float    f1()
+           {
+           }
+           If  a  function  is  already  defined,  prototype  is  optional.  On  the  otherhand,  If  a  function  is  defined
+           afterwards,  prototype  is  mandatory
+
+
+
+
