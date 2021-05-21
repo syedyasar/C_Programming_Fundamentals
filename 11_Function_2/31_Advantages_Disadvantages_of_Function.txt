@@ -1,0 +1,113 @@
+Advantages  of  function
+---------------------------------------
+1)  Repetitive  coding  can  be  avoided
+     ----------------------------------------------------------
+    When  same  code(i.e. statements)  is  repeated  at  different  places  of  the  program,  function   is   used  as  an
+    alternative
+    i.e.  Write  the  code  only  once  in  the  function  and  call  the  function  wherever    the   code  is  required.
+    Thus    repetative  coding  can  be    avoided  by  using  function.
+
+     Eg1 :   void  f1()
+	        {
+			printf("Hyd\n");
+			printf("Sec\n");
+			printf("Cyb\n");
+		}
+		main()
+                {
+	            f1();
+                    ....
+	            .....
+	            f1();
+                }
+
+     Eg2 :  When  100  statements  are  repeated  at  2  different  palces  of  the  program,  write  those  100
+               statements  in  a  function  and  call  function  whereever  those  100  statements  are  required.
+               Thus  100 + 100 = 200    statements  are  reduced  to  100  + 1 + 1 = 102  statements.
+               Size  of  the  program  is  also  reduced
+
+     Eg3 :  Find  4! , 9!  and  7!.    Don't  write  same  code  3  times  instead  design  a  function  for  n!  and  call  the
+               function  3  times
+               int  fact(int  n)
+               {
+		    ......
+               }
+               fact(4);
+	       fact(9);
+	       fact(7);
+
+2)  Reusability
+     ------------------
+a) Function  defined  in    a  program    can  be  called  from  a  different  program.  This  is  called  reusing  the
+    function  and  it  is  possible  by  #include  "file"
+
+b) Don't  define  same  function  in  every  program  becoz  it  is  a  waste  of  time  and  money.
+    i.e. Define  function  only  once  and  call  the  function  from  any  other  program  by  simply  including   the
+    corresponding  file.
+
+c) Reuse  the  function  but  not  rewrite
+
+Note:
+i) Save  main  function  in  a  differnet  file  but  not  along  with  other  functions
+    i.e  If    a  program  contains  10  functions,  save  9  functions  in  file1.c  and  main    function  in  file2.c
+
+ii) Advantage  of  saving  main  function  in  a    differnet  file  is  that  the  9  functions  of  file1.c  can  be  used  by
+    any  another  program  by  simply  including  file1.c .   We  need  not  comment  anything    in  file1.c   becoz
+    main  is  in  a  different  file.
+
+iii) Thus  commenting  burden  is  avoided
+
+3)  Modularity
+     -------------------
+a)  Don't  write  whole  program  logic  in  a  single  function  main.
+
+b)  Write  a  separate  function  for  each  task.
+      Eg:  Read  inputs  in  a  function,  do  computations  in  another  function  and  display  results  in  3rd   function.
+             Call  all  the  functions  from  main.
+
+c)  'C'  is  called  Structured  programming  language    becoz   'C'  program  is  divided  into  functions  and  each
+      function   does  a  different  task.
+
+*d)  Divide  a  large  program  into  modules  and  implement  each  module  by  a  function
+
+Eg:   void  read()
+	{
+		reads  inputs  may  be  p ,  t  ,  r
+	}
+	void compute()
+	{
+		do  computations  may  be  si  and  ci
+	}
+	void  disp()
+	{
+		prints   results  i.e  si  and  ci
+	}
+	main()
+	{
+		read();
+                compute();
+		disp();
+	}
+
+Disadvantage:
+----------------------
+Processor  time  is  wasted
+-------------------------------------------
+1) Sequential  execution  of  statements  is  fast  but  function  execution  is  slow  due  to  branching.
+
+2) Processor  time  is  wasted  (approx  :  1  micro  sec)    due  to  branching.
+
+3) As  number  of  function  calls  increase,  program  execution  becomes  slow.
+
+*4) Therefore  minimize  number   of  function  calls  and  don't  call  same  function  too  many  times.
+
+Eg1 :    Find  4!    three  times.
+            int      ans = fact(4);
+            Call  the  function  only  once  and  assign  the  result  to  a  vaiable.
+            Use  variable  ans  subsequently  and  don't  call  the  function  again
+
+Eg2 :    a * a * a  is  fast  in  execution  compared  to  pow(a , 3).
+            Expression  evaluation  is  fast  and  function  execution  is  slow.
+            When  there  is  an  alternative  to  function,  prefer  it.
+
+
