@@ -1,0 +1,25 @@
+Summary
+-----------------
+main()
+{
+	auto  int   a = 10;  ---->  Local  variable
+	static  int  b = 20;  --->  static  variable
+	register  int   c = 30; ---->  register  variable
+	extern  int   d; --->  main  function can  use  global  variable  'd'
+	register  static  int   e = 50;  --->  register  static  variable
+}
+int  d  =  40;  --->  Global  variable
+void  f1()
+{
+}
+
+1) There  is  no  keyword  to  declare  Global  variable
+
+2)  Advantage   of  Gv  --->  Multiple  functions  can  use  GV
+
+3)  Advantage   of  RV  --->  Fast  in  access
+
+4)  Advantage   of  SV  --->  One  time  initialization
+
+5)  Advantage   of  Lv  --->  Exclusive  to   a  function
+
