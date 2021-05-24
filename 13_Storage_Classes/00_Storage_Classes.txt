@@ -1,0 +1,14 @@
+Storage  classes    or    Scope  of  variables
+-------------------------------------------------------------------------
+1) Scope  of  a  variable  is  defined  as  how  long  a  variable  is  visible  ?
+    i.e. What  is  life  of  the  variable
+
+2) In otherwords,  when  variable   is      lost  ?
+
+3) Where  exactly  variable  can  be  used ?
+
+4) There  are  4  scopes
+    a) Local  variable  or  Automatic  variable
+    b) Global  variable  or  External  variable
+    c) Static  variable
+    d) Register  vaiable
