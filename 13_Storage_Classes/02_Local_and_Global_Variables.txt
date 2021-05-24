@@ -1,0 +1,18 @@
+	Local  variable										Global  variable
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1) It  is  declared  by							   1) It  is  declared  by  int  x = 10;
+    auto  int  x=10;
+            or
+    int  x = 10;
+    auto  is  default  scope
+
+2) It  is  declared  inside  the  function				   2) It  is  declared  outside  the  function
+
+3) It  contains  garbage  value  when  it			   3) It  contains  0  by  default  when  it  is  not  initialized
+    is  not initialized
+
+4) It  can  be  used  by  a  single  function			   4)  It  can  be  used  by  multiple  functions
+    i.e.  that  function  where  variable  is  declared
+
+5) It  is  created  when  function  is  called  and		   5) It  is  created  before  program  execution  starts
+    lost  after  function  terminates					      and  lost  after  program  terminates
