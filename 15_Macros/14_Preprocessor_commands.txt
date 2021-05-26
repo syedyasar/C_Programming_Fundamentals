@@ -1,0 +1,12 @@
+Preprocessor  commands
+----------------------------------------
+1)  #include
+2)  #define
+3)  #undef
+4)  #if
+5)  #ifdef
+6)  #ifndef
+7)  #else
+8)  #endif
+9)  #elif
+10)  #pragma
