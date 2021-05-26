@@ -1,0 +1,30 @@
+Advantages  of  Macro
+-------------------------------------
+1) Macro  improves  program  clarity  and  readability
+    Eg  :   #define  TRUE        1
+              #define  FALSE      0
+	      #define  PI  3.14159
+	      #define  MINBAL  1000
+	      #define  DOLLAR  70
+    Use  macros  TRUE    and  FALSE  in  the  program  but  not  1  and  0
+    Eg:   if(cond)
+		    return  TRUE;
+             else
+		    return  FALSE;
+    Use  PI  in  the  program  but  not  3.14159
+    Eg :  area = PI * r * r;
+
+2) Modification  becomes  simple
+     Eg:  Modify  minimum   balance   to  2000
+     #define  MINBAL    1000    ---->  #define  MINBAL    2000
+     Modify  MINBAL  to  2000  only  once  in  the  macro  definition  and   new  value  is  reflected  to   whereever
+     MINBAL   is  used  in  the  program.  Thus  updation  becomes  simple.
+                                       On  the  otherhand,  if  1000  is  used  directly  in  the   program  at  several  locations,
+     modifying  each  1000  to  2000  becomes  difficult.  In   general,  macros   are   used   for  frequently  modified
+     values.
+
+3) Use  macro  as  a  shortcut  name  for  long  function  names
+    Eg  :    #define  pf  printf  ---->  pf  is  a  shortcut  name  to  function  printf
+               #define  sf  scanf  ---->  sf  is  a  shortcut  name  to  function  scanf
+               #define  mc  malloc ---->  mc  is  a  shortcut  name  to  function  malloc
+    printf  is  substituted  whereever  pf  is  used   in  the  program
