@@ -1,0 +1,216 @@
+Preprocessor
+----------------------
+1) It  is  a  software  i.e.  Collection  of  programs
+
+2) #  is  a  preprocessor  directive  (i.e.  invitation  to  preprocessor)
+
+3) Preprocessor  job  is
+    a)  Expand  macro
+         Eg:  #define    PI      3.14159
+         Preprocessor  substitutes  3.14159  wherever  macro  PI  is  called
+
+    b)  Expand  file
+         Eg  :    #include  <stdio.h>  ---> Contents  of  the  file  are  substituted  by  preprocessor
+
+    c) Conditional  Compilation
+        Eg:  #if   cond
+			  stmt1;
+			  stmt2;
+			  stmt3;
+		#else
+			   stmt4;
+			   stmt5;
+			   stmt6;
+                #endif
+         Statements 1 , 2  and  3  are  compiled when  cond  is   true  and  Statements  4 , 5 and  6  are
+         compiled  when  cond  is  false
+
+4) Macro   expansion ,   File  expansion   and  conditional  compilation    are   made  at  compile  time
+
+5) They  are  made   before  compilation    and   hence  it  is  called  preprocessor
+
+Note:
+Processor  is   hardware i.e.  Collection  of  circuits  but   preprocessor  is  software  i.e.  Collection  of  programs
+
+Compiler
+---------------
+1)  It  is  also  a    software
+
+2)  It  translates  Source  code  to  Machine  code
+
+3)  Computer  understands  only  machine  language(i.e.  0's  and  1's)
+
+4)  It  is  not  possible  to  run  a  program  without  compilation
+     i.e.  Compile  first  and  then  execute
+
+5) Avoid  repeated  compilation  i.e.  Don't  compile  the  program  every  time  program  is  to   be  executed
+
+6) In otherwords,  Compile  only  once   and   run  the  program  any  number  of  times  without  recompiling
+    the  program
+
+7) Recompile  the  program  every  time  changes  are  made  to  the  source  code  so  that  changes  are
+    reflected  to  machine  code.  If  it  is  not  recompiled,  old  machine  code  is  executed  where   there
+     are  no   changes
+
+Note:  There    are   several  compilers   like  Turbo  'C'   compiler  ,  Gcc  compiler  and  so  on
+
+Linker
+----------
+1)  Every  function  is  in  memory  at  an  address
+
+2)  Address  of  the  function  is  substituted  whereever  function  is  called.
+
+3)  This  is  called  Linking  or  Binding  and  it  is  done by  linker
+
+4) Let  f1  function  be  in  memory  at  addess  1000  and  1000  is  substituted  whereever  f1  function  is
+    called.
+    Eg :   f1();    ---->  1000
+
+5) It  is  linker  which  substitutes  address  1000  and  OS  branches  to  memory  address  1000  and
+     executes   f1    function
+
+6) Called  function  address  is  substituted  in  calling  function.  In  otherwords,  called  function  is   linked
+     to    calling  fucntion
+
+7) Those  functions  which  are  called  are  linked  to  exe  file  and  rest  are  ignored
+     Eg:  If  programmer  defines  10  functions  and  20  functions  are  substituted  from  various  header
+            files.  But  Only   7  functions  are  called from   the  program,  those  7  functions  are  linked  to  exe
+            file  and    remaining  23  functions  are  ignored
+
+
+Loader
+-------------
+1)  It  loads  exe  file  into  memory  and  informs  OS  at  what  address  exe  file  is  loaded
+
+2)  OS  branches  to  that  address  and  executes  exe  file
+
+3)  Computer  reads  program  from  memory  but  not  from  disk(due  to  mismatch  in  speeds)
+
+4)  Loader  transfers  executable  program  from  disk  to  memory  (RAM)
+
+
+Operating  System(OS)
+--------------------------------------
+1)  It  reads  each  statement  of  the  program, interprets  them  and  generate  results
+
+2) Thus   OS  job  is  program   execution  i.e.  processing  the  program
+
+
+
+Note:
+Every  "C"  program   undergoes    5  stages
+1)  Macro  and  File  expansion  by  preprocessor
+
+2)  Compilation  by  compiler
+
+3)  Linking  by  linker
+
+4)  Loading  by  loader
+
+5)  Execution  by  OS
+
+
+Source  code
+-----------------------
+1)  It  is  in    .c  file
+
+2)  It  is  the  code  designed  by  programmer
+
+3)  It  is  input  to  preprocessor
+
+4)  It  contains  macros  and  header  files
+
+Expanded  code
+---------------------------
+1) It  is  output  of  preprocessor  and  input  to  compiler
+
+2) It  does  not  contain  macros  and  header  files  becoz   they  are  already  expanded
+
+3) It  is  not  in  any  file  i.e.  It  is  in  memory  as  long  as  program   is  under  compilation  and  lost  after
+    compilation  is  finished
+
+Machine  code
+------------------------
+1)  It  is  in  .obj  file
+
+2)  It  is  output  of  compiler  and  input  to  linker
+
+3)  It  is  in  the  form  of    0's  and  1's
+
+4)  It  is  a  huge  file  i.e.  It  contains  functions  defined  by  programmer  and  functions  which  are
+     substituted  from  various  header  files
+
+
+Executable  code
+-----------------------------
+1)  It  is  in  .exe  file
+
+2)  It  is  output  of  linker  and  input  to  loader
+
+3)  It  is  ready  to  execute
+
+4)  It  is  a    small  file  i.e.  It  contains  those  functions  which  are  called  by  programmer  but  not  all
+      the  functions  defined    by  programmer  and  function  which  are  substituted  from  various  files
+
+Note:
+1)  It  is   a   3-step  process in  Turbo  'c'   compiler  i.e.  Compile , link  and   run
+
+2) It  is   a   2-step  process  in  Gcc  compiler  i.e. compile  and   run (There  is  no  linking  in  Gcc  compiler)
+
+
+                                      .c  file										.exe  file
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+1)  It  contains  source  code							1)  It  contains  executable  code
+      i.e.  code  designed  by  programmer				     i.e.  code  which  is  ready  to  execute
+
+2)  It  is  in  human  understandable  form				2)  It  is  in  computer  understandable  form
+
+3)  It  can  be  compiled  but  can  not  be  executed		3)  It  can  be  executed
+     i.e.  To  compile  the  program,  .c  file  is  required             i.e.  To  run  the  program,  .exe  file  is  required
+
+4) It  is  with  programmer  and  can  not  be  given  to  the    4)  It  is  given  to  the  client
+    client
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Programmer  job  :
+1)  Design  the  program
+
+2)  Compile  the  program
+
+3)  Make  it  error  free  program
+
+4)  Run  the  program  just  to  verify  program  is  executed  or  not
+
+Client  job:
+1)  Run  the  program
+     Hence,  pass  .exe  file  to  the  client
+
+Advantages  of  exe  file
+-----------------------------------------
+1)  exe  file  can  be  executed  without  having  'c'  software
+     i.e.  Type  exe  file  name  at  command  prompt and presss enter  key,   exe file   is  executed
+     Eg:    circle  ---->  circle.exe  file  is  executed
+
+2)  Souce  code  is  hidden  from  the  client
+     i.e.  Client  can  execute  exe  file  but  he  can  not  see  logic  behind  exe  file
+
+C  and  C++  are  platform  dependent  languages
+----------------------------------------------------------------------------------
+1)  c  and  c++  programs   compiled  on  windows  can  not  be  executed  by  unix
+
+2)  This  is  because  machine  codes  vary  from  system  to  system
+     Eg  :             Windows    ----      1010   0101  (switch  stmt)
+                         Unix            ----      1011  1100  (switch  stmt)
+  		         Linux           ----      0101  0011  (switch  stmt)
+     switch  compiled  on  windows  generates  1010  0101  but  it  can  not  be  executed  on  unix   becoz
+     machine  code  is  different  on  unix
+
+3)  Hence  run  the  program  on  the  same  system  where  it  is  compiled
+      Eg:  If  'c'  program  is  compiled  on  X  o.s.  and  Y  processor,  run  the  program  also  on  the  same
+             platform(O.S. + Processor = Platform)
+
+4)  Hence  c  and  c++    are  platform  dependent  languages
+
+5)  Java  is  a    platform  independent  language  i.e.  compile  java  program  on  any  system  and  run  the
+     program      on  any  other  system.
+
+6)  This  is  possible  due  to  JVM(Java  Virtual  Machine)
