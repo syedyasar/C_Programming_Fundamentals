@@ -1,0 +1,36 @@
+#else
+----------
+1) #else  can  be  used  for  #if , #ifdef  and  #ifndef
+
+2) #else  is  executed  when  cond  is  false  in  case  of  #if
+
+3) #else  is  executed  when  macro  does  not  exist  in  case  of  #ifdef
+
+4) #else  is  executed  when  macro    exists  in  case  of  #ifndef
+
+5) #if      cond
+    	    stmts   ---->  They  are  compiled  when  cond  is  true
+    #else
+   	    stmts ---->    They  are  compiled  when  cond  is  false
+    #endif
+    stmts   --->   They  are  always  compiled  irrespective  of    the    cond   becoz  they  are  outside  #if
+
+6) #ifdef    macro
+      	    stmts   --->   They  are  compiled  when  macro  exists
+    #else
+	    stmts ---->  They  are  compiled    when  macro  does  not  exist
+    #endif
+    stmts  --->  They  are  always  compiled  becoz   they  are  outside  #ifdef
+
+7)  #ifndef    macro
+    		stmts   ---->  They  are  compiled  when  macro  does  not  exist
+      #else
+ 		stmts   ---->   They  are  compiled  when  macro  exists
+      #endif
+      stmts  ---->   They  are  always  compiled becoz   they  are  outside  #ifdef
+
+#endif
+-----------
+1) #endif  is  required   for  every  #if  ,  #ifdef   and  #ifndef  but   not   for   #elif
+
+2) Every  #if , #ifdef    and  #ifndef  must  be  ended  with  #endif
