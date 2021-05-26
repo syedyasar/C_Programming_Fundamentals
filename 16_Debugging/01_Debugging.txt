@@ -1,0 +1,93 @@
+Debugging
+-----------------
+1) Bug  is  an  error
+
+2) Debugging  is  locating  and  correcting  errors  of  the  program
+
+3) Debugging  plays  an  important   phase  in  program  development
+
+4) There  are  4  types  of  errors
+     a)  Syntax  Error  or  Compile  time  error
+     b)  Linker  Error
+     c)  Runtime  Error
+     d)  Logical  Error  or  Semantic  Error
+
+Syntax  Error  or  Compile  Time  Error
+---------------------------------------------------------------
+1) It  is  due  to  grammetical  mistake
+
+2) It  is  reported  when  syntax  of  the  statement  is  violated
+
+3) It  is  reported  at  compile  time
+    i.e.  Syntax  errors  are  reported   when   program   is  compiled
+
+4) It  is  compiler  which  is  testing   for  syntax  errors
+
+5) If  there  is  atleast  one  syntax  error,  program  is  not  translated  to  machine  code
+    i.e. Program  must  be  error  free  inorder  to  perform  translation
+
+6) All  syntax  errors  are  reported  simultaneously
+
+Eg:
+1) a = 25    ---->  ;  is  missing
+
+2)  if  a > b    ---->  Condition  with  out  ()
+
+3)  (a * (b + c)    ---->  ')'  is  missing
+
+4)  x = 25;  ---->   Variable  is  not  declared  i.e. Variable   is  used  without  declaration
+
+
+Linker  Error
+--------------------
+1) It  is   reported  when  we  try  to  call  non-existing  function
+     Eg  1  :    f1();  ---->    but  function  f1  does  not  exist  in  the  program  and  hence it  leads  to  Linker  error
+
+     Eg  2  :   scant("%d"  , &a);    --->  Linker  error  becoz   scant  function  does  not  exist
+
+2) It  is  reported  at  Linking  time
+    i.e.  Linker  errors  are  reported  when  program is  linked
+
+3) It  is  linker  which  is  testing   for  linker  errors
+
+4) If  there  is  atleast  one  linker  error,  .exe  file  is  not  generated
+    i.e. Program  must  be  error  free  inorder  get  exe  file
+
+5) All  linker  errors  are  reported  simultaneously
+
+Runtime  Error
+-------------------------
+1) It  is  due  to  no  result   for    an  expression  or  statement
+    Eg  1  :    7/0  ---->  division  by  zero  leads  to  runtime  error
+    Eg  2  :    array[Invalid  subscript]  -->    Array  subscript  out  of  boundaries
+    Eg  3  :  sqrt(-25)  --->  Runtime  Error
+    Eg  4  :  Printer  without  paper
+    Eg  5  :  cd  drive  without  cd
+    Eg  6  :  Illegal  memory  access
+
+2) It  is  reported  at  run  time or execution  time
+    i.e.  Runtime    errors  are  reported  when  program is  executed
+
+3) It  is  OS  which  is  testing  for  runtime  errors
+
+4) If  there  is  atleast  one  runtime  error,  results  are  not  obtained
+    i.e.  Program  must  be  error  free  inorder  to  get  results
+
+5) Runtime  errors  are  reported  one  at  a  time
+
+6) This  is  because  rest  of  the  program  is  skipped  when  there  is  a  runtime  error
+
+7) Syntax, Linker  and  Runtime  errors  are  easy  to  debug  becoz   system  reports  both  line  number
+    and  error
+
+
+
+Logical  error
+---------------------
+1) It  is  due  to  a  mistake  in  the  logic  of  the  program
+
+2) It  is  not  an  error  but  it  leads  to  incorrect  results
+
+3) It  is  most  difficult  to  debug  becoz  no  error  is  reported
+
+
