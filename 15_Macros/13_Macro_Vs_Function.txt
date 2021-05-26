@@ -1,0 +1,50 @@
+		Macro										Function
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1) #define  abc   stmt1 ; stmt2 ; ..... 				1)  void  f1()
+     This  is  macro  definition  and  braces			     {
+     are  optional  in  macro  definition						stmt1;
+													stmt2;
+													.....
+											     }
+											     This  is  function  definition and  braces
+										             are  mandatory  in  function  definition
+
+2) abc  is   macro  call							2)  f1();   is  function  call
+     ()  are  not  required  in  macro  call  when                   ()  are  mandatory  in  function  call  irrespective
+     there  are  no  parameters				             of  parameters  exist  or  not
+
+3) Macro  call  leads  to  substitution				3) Function   call  leads  to  branching
+    i.e.  Stmts  of  the  macro  are  substituted	            i.e.  Control  branches  to  called  function,
+    whereever  macro  is  called					    executes  it  and  returns  to  calling  function
+
+4) Macro  is  processed  at  compile  time			4)  Function  is  processed  at  runtime  by  OS
+     by    preprocessor
+
+5) It  can  not  return  any  value  becoz  there  is  no	5)  It  can  return  value  becoz  there  is  return  type
+    return  type  i.e.  macro  is  like  a  void  function
+
+6) There  is  no  prototype						6) There  is  prototype
+    i.e.  Call  macro  directly  without  prototype               i.e.  Declare  function  before  calling  the    function
+
+7)  .c  file  contains  macro  but  not  .exe  file		7)  .exe  file  contains  function
+
+8) It  is  fast  in  execution  becoz   branching  is         8)  It  is  slow  in  execution  becoz   branching  is  involved
+    eliminated  and  it  leads  to  sequential  execution
+    of  statements
+
+9) Macro  is  used   when  there  are  few  statements  9) Function  is  used   when  there  are  too  many
+											      statements
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1) If  a  macro  contains  100  stmts  and  if  it  is  called  3  times,  There  is  a  total  of  300  stmts.
+
+2) On  the  otherhand,  If  a  function  contains  100  stmts  and  if  it  is  called  3  times,  there  is  a  total  of
+    103  stmts  (100+1+1+1=103).
+
+3) Unix   O.S.    executes   small  programs  before  large  programs
+     i.e.   103  stmts  program   is  serviced  before  300  stmts  program
+
+4) Hence  don't  use  macro  when  there  are  too  many  stmts
+
+5) There  is  no  macro  at  runtime  becoz   it  is  already  processed  at  compile  time
+
+6) OS  has  no  idea  about  macros  becoz  exe  file  does  not  contain  macro
