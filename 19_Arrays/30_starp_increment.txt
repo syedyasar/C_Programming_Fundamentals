@@ -1,0 +1,21 @@
+int   a[] = {10 , 20 , 15 , 18}
+int  *p = a;    -->  p  points  to  first  element  of  array
+
+				(*p)++                                     *p++
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1)  *p  is  incremented					1) p  is  incremented
+
+
+2)  10  becomes  11  and				2) p  moves   to  next  element  20  (due  to   p++)  and  20  is  retrieved
+      result  of  (*p)++  is  also  11                      (due  to   *p).  so  *p++  is  20
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1) Binary  operators  are  evaluated  from  left  to  right  and  unary  operators  are  evaluated  from  right      to  left
+
+2) *     is  unary operator  (*p)   and    ++  is  also  unary  operator (p++)
+
+3) In  *p++ ,  p++  is  first  executed  and  then  *p  (right  to  left)
+
+4)  When  *p++  is  executed,
+     a)  pointer  p  moves  to  next  location
+     b)  *p  retrieves  value  at  that  location
