@@ -1,0 +1,16 @@
+Different  forms  of  []  operator
+----------------------------------------------------
+1)  int  a[5];    ---->  []  is  array  operator
+
+2)  printf("%d" , a[2]);    --->  []  is  subscript  operator
+
+3)  []  in  declaration  statement  is  array  operator  and
+     []  in  executable   statement  is  subscript    operator.
+
+4)  int  a[5];  ---->  'a'  is  an  array  of  size  5
+     a[2]  is  element  at  subscript  2
+
+
+Note:
+int   *p;  ---->  *   is   pointer  operator   becoz   it  is   a  declaration statement
+printf("%d" , *p);  ---->  *   is    dereferencing  operator  becoz  printf  is   an  executable  statement
