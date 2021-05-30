@@ -1,0 +1,32 @@
+			CBV									 	CBA
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1) Value  is  sent  to  the  function					1)  Address  is  sent  to  the  function
+     Eg:    f1(25)								  	     Eg:    f2(&a);
+     Value  25  is  sent  to  the  function				     Address  of  variable  'a'  is  sent  to  the  function
+
+2) Formal  parameter  is  variable		  	                2) Formal  parameter  is  pointer
+    i.e.  int    x									             i.e.  int  *x
+
+3)  void  f1(int  x)								       3) void  f2(int  *x)
+     {											            {
+     }											            }
+
+4) Actual  parameter  can  be  value , variable               4) Actual  parameter  is  address
+    or  expression							     	          Eg:  f2(&a)
+    Eg:    f1(25);
+             f1(a);
+             f1(a + b * c);
+
+5) When  value  is  sent  to  the  function,	                    5) When  address  is  sent  to  the  function,
+    it  can  not  be  modified  by  the  called  function        function  can  modify  value  at  that  address
+    Eg:  f1(a);									         Eg:    f2(&a);
+           f1  function  can  not  modify  value  of  'a'		           f2    function  can  modify  value  of  'a'  through  pointer
+
+6) CBV  is  used  for  input  parameters                        6) CBA   is  used   for  output  parameters
+    (becoz  they  should not  be  modified)		               (becoz  they  must  be  modified)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Case  1 :  To  modify  value  or  variable  in  a  function,  send  its  address  to  the  function
+
+Case  2 :  To  modify  address  in  a  function,  send    address  of  address  to  the  function
+
+Case  3 :  To  modify  address  of  address  in  a  function,  send    address  of  address  of  address  to  the   function
