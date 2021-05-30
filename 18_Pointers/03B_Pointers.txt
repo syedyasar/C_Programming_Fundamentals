@@ -1,0 +1,67 @@
+Pointer
+------------
+1) If  a  variable  contains  address,  it  is  known  as  pointer  variable
+
+2) *  is  used  to  declare  pointer
+
+3) int  a;     --->  'a'  is  variable  becoz  *  is  missing
+    int*   b;  --->      b  is  pointer  due  to  *
+
+4) Pointer  points  to  an  existing  variable. In otherwords ,  pointer  contains  address  of  an  existing  variable
+
+Indirection    or    dereferencing  operator(*)
+-------------------------------------------------------------------------
+1) *p  means  value  at  addrees  p
+    i.e.  That  value  where  p  points
+
+2) Variable    can  be  accessed  indirectly  through  pointer  by  *p
+
+3) *p  internally  access  variable
+
+4)  &  is  addess  operator  and   *  is  value  operator
+
+5) They  are  unary  operators
+    &variable   --->  Address  of  the  variable
+   *pointer    --->  That   value  where   pointer   points
+    &pointer  -->  Address  of  the  pointer
+
+6) *  and  &  are  quite  opposite  operators
+    They  can  be  cancelled  when  they  are  used  together
+
+7)  &*p   is  nothing  but  p
+     *&x    is  nothing  but    x
+
+
+Different  forms  of  *  operator
+------------------------------------------------
+1) int*      p;    ---->  *  is  pointer  operator  becoz   int  *p  is  a  declaration  statement
+
+2) printf("%d" , *p);  --->  *  is  value  operator  becoz  printf  is  an  executable  stmt  and  *  has  only  one  operand  p
+
+3) 10 * 20  --->    *   is  multiplication  operator  becoz     *    has  2  opearnds
+
+4) scanf("%d %*d %d" , &a , &b , &c);    --->  *  means  don't  read  the  input
+
+5)  *  is  unary  and  binary  operator (like  +  and  -)
+     *  is  value  operator   when  *    has  only  one  operand   and
+     *  is  multiplication  operator  when     *  has  2  operands(10 * 20)
+
+Prove  that  *p  =  x
+---------------------------------
+Consider  p = &x  --->  Use  *  on  both  the  sides
+                *p  = *&x
+                      =  *1000
+             	      =  25
+ 	              =   x
+                Thus  *p = x
+Observe  that  *&x  is  reduced  to  x  in  the  above  derivation
+
+
+Note  :
+1) int*          p;
+    int            *p;
+    int      *        p;
+            All  the  above  3  statements  are  same
+
+2) int  *p = &x;  --->  Address  of  variable  x  is  assigned  to  p  but  not  to    *p.
+                                  *   informs  system  that  p  is  a  pointer
