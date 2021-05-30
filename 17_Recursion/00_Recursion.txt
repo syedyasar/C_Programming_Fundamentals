@@ -1,0 +1,43 @@
+Recursion
+--------------
+1) If  a  function  calls  itself,  it  is  known  as  recursion
+    i.e. Function  calls  same  function
+    Eg :   fact  function  calls  itself
+    Eg :   main  function  calls  itself
+
+2) 4 !=  4  *  3!  ---->   factorial  is  defined  interms  of  itself
+
+3) Terminating  point  must  be  specified  otherwise  it  leads  to  infinite  recursion
+     Eg :    0 != 1  --->  0  is  terminating  point  for  factorial
+
+4) In  general,  n!   =   n * (n - 1)!   if    n > 0
+                               =  1                  if   n = 0
+    Recursion  continues  as  long  as  n > 0    and    stops  when  n  is  0
+
+5) If   statement  is  mandatory  in  every  recursive  function  otherwise  it  leads  to  infinite  recursion
+
+**6) Every  function  can  be  implemented  in  2  ways
+    a)  Iteration
+    b)  Recursion
+
+			    Iterative  Function							Recursive  Function
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1) Function   calls  another  function					1) Function  calls  itself
+
+2) It  uses  for  loop , while  loop  or  do..while  loop		2) It  uses  if  statement  and   infinite  recursion
+												     without  if
+
+3) Easy  to  design  the  function						3) Difficult  to  design  the  function
+
+4) Fast  in  execution  becoz   one  function   call  is 		4) Slow  in  execution  becoz  several  function
+     enough  to  get    the  result					            calls  are involved  to  get  the  result
+
+5) Large  function  i.e.  too  many  stmts  are  required       5) Small  function  i.e.  Function  can  be  designed
+    to  design the  function							    with  a  minimal  number  of  statements
+
+6) Function   call  leads  to  value		  	                        6) Function  call  leads  to  one  more  call
+     Eg:  fact(4)  is  24							            Eg:  fact(4)  =  4 * fact(3)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Advantage   of  recursion  --->     Small  function  i.e.  code  is  drastically  reduced
+Disadvantage  ---->   Slow  in  execution  due  to  too  many  function  calls
+Preference  --->  Iteration  becoz  it  is  easy  to  design  the  function (at least  by trial and error)
