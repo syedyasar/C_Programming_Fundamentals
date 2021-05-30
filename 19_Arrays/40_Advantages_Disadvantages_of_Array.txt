@@ -1,0 +1,58 @@
+Advantages  of  Array
+-------------------------------------
+1) Random  Access  but  not  sequential
+    Eg:  10th  element  of  array  can  be  accessed  directly  by  a[9]  without  accessing  first  9  elements.
+            This  is  possible  due  to  subscripts
+
+2) All  elements  are  under  single  name(like  super  market)
+    Eg:  int  a[10];    -->  All  10  elements  are  under  single  name    'a'
+
+3) To  represent   marks  of  10   subjects ,  10   variables   are    not  required  instead  a  single  array  is  enough  with
+     size  10
+     Eg :  int  marks[10];
+
+4) Arrays  are  used  to  implement  Stack , Queue , Tree , Graph , Matrix   and  so  on
+
+5) Similar  type  of  elements  i.e.  Array  can  not  hold  different  types  of  elements
+
+6) If  we  know  address  of  first  element,  remaining  elements  of   array   can  be  accessed  easily  becoz  they  are
+    represented  in  contiguous  memory  locations
+
+Disadvantages
+--------------------------
+1) Insertion  and  deletion  are  difficult  becoz  shifting  is  involved
+    Eg:    10 , 20 , 30 , 40 , 50 , 60
+    To  insert  25  between  20  and  30,   remaining  elements  60 , 50 , 40   and   30  must  be  shifted    to  successor
+    locations  and  then  insert  25  between  20  and  30
+
+    Eg:  10 , 20 , 25 , 30 , 40 , 50 , 60
+    To  delete  25,  remaining  elements  30 , 40 , 50   and  60  are  shifted   to  predecessor  locations
+
+2) Array  size  must  be  known  in  advance
+    i.e.  Array  can  not  be  created  without  specifying  the  size
+
+3) Array  size  can  not  be  increased   and   decreased
+     i.e.  array  size  is  fixed
+     In  otherwords,  array  is  neither  growable  nor  shrinkable
+
+4) Memory   wastage  and overflow
+     Eg:  If  Array  size  is  20  and   we  are  representing  only  7  elements  in  the  array,  remaining  13  locations  are  wasted.
+     Eg:  If  Array  size  is  20   and   we  try  to  represent  21  elements,  it  leads  to  overflow
+
+5) There  is  no  subscript  verification  in  'C'   language
+     Eg:  int  a[]  =  {10 , 20 , 30 , 40 , 50};
+            printf("%d" , a[5]);  --->   Garbage  value  but  not  error  even  though  5  is  invalid  subscript
+
+Applications  of  Array
+--------------------------------------
+1) Array  is   used   to   represent  similar  type  of  elements
+
+2) Large  amount  of  data  can  be  represented  in  a  single  name and it  avoids  usage  of  multiple  variables
+
+3) Arrays  are  used  for  sorting  elements
+
+4) Arrays  are  used  for  matrix  operations
+
+5) Array  can  be  used  to  represent  records(student  records , employee records  , customer  records)
+
+6) Array  can  be  used  to  implement  stack , Queue , Tree , Graph , Hash  table  and  so   on
