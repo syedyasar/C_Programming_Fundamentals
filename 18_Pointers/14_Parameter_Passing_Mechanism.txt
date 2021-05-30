@@ -1,0 +1,19 @@
+Parameter   Passing  Mechanisms
+--------------------------------------------------------
+1)  Call-By-Value  or  Pass-By-Value
+2)  Call-By-Address  or Pass-By-Address
+
+Note:
+1) f1(25);  ---->  CBV  becoz   value  25  is  sent  to  f1  function
+
+2) f2(&a); ---> CBA  becoz   address  of  variable  'a'  is  sent  to  f2  function
+
+3) f3();  ---> Neither  CBV  nor  CBA   becoz   there  are  no  parameters  to  f3  function
+
+4) f4(variable) ----> CBV  becoz  value of variable is sent to  f4  function
+
+5) printf("%d" , a);  ---->  CBV  becoz  value  of  variable  'a'  is  sent  to  printf
+    scanf("%d" , &a); ---> CBA   becoz   address  of  variable  'a'  is  sent  to  scanf
+    main  is  neither  CBV  nor  CBA   becoz  main  has  no  parameters
+
+
