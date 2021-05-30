@@ -1,0 +1,20 @@
+Pointer  to  Variable        Pointer  to  Constant                        Constant  Pointer             Constant  Pointer  to  Constant
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1) int*    p;	                       1) int  const  *p;                     1) int    *  const    p;	             1) const  int  *  const  p;
+    'p'  is  pointer  to                   'p'   is  pointer  to                   'p'   is  constant  pointer	         'p'     is    a    constant  pointer
+     variable				    constant	                                          				          to   constant
+
+2) Both  pointer  and  value  2) Value  can  not  be  modified    2) Pointer  can  not	    2) Neither  pointer  nor  value  can  be
+    can  be  modified		     through   pointer                             be  modified      	        modified
+        		                  							       i.e. pointer  points  to  same
+                                                        						      location  forever
+
+3) Both  p  and  *p  are         3)  *p  is  constant  but  not  p      3)  p  is  constant  but  not  *p    3) Both  p  and  *p  are  constants
+    not  constants
+
+4) (*p)++  increments	        4)  (*p)++  is  invalid                       4)  valid		   			       4)  Invalid
+     that  value,  where  p
+      points , by  one
+
+5) p++  moves  pointer  p  to  next      5) p++  is  valid              5)  Invalid				      5)  Invalid
+    location
