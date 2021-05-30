@@ -1,0 +1,32 @@
+Stack
+------------
+1) It  is  a  group  of  memory    locations  where  operation  is  LIFO  (Last  in  First  out)
+
+2) Last  inserted  element  in  the  stack  is  first  removed
+    Eg:  10 , 20 , 30  and  40  are inserted  into  the  stack  and  they  are  deleted  in  reverse order   40 , 30 , 20 , 10
+
+3) Address  of  next  stmt(called  return  address)  is  represented  in  the  stack  when  there  is   a   function  call
+
+4) After  called  function  terminates,  return  address  is  removed  from  the  stack  and  execution  resumes    from
+    statement  following  the  function  call
+
+5) It  is  end  of  the  program  when  stack  is  empty
+
+6) It  is  OS    which  uses  stack  during  program  execution
+
+7) Stack  contains  return  addresses
+
+8) main()
+    {
+	f1();
+       1000 : next stmt;
+    }   --->  End  of  the  program  becoz  stack  is   empty
+    void  f1()
+    {
+  	  f2();
+	  2000 :  next stmt;
+     } --->  OS deletes 1000  from stack  and  execution resumes from  address  1000
+     void  f2()
+     {
+     }  --->  OS deletes 2000  from stack  and  execution resumes from  address 2000
+
