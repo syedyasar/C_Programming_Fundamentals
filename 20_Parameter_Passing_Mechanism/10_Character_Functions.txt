@@ -1,0 +1,11 @@
+Character  functions
+----------------------------------
+1) isalpha()
+2) isupper()
+3) islower()
+4) isdigit()
+5) isalnum()
+6) isspace()
+7) toupper()
+8) tolower()
+		     They  are  defined  in  <ctype.h>  file
