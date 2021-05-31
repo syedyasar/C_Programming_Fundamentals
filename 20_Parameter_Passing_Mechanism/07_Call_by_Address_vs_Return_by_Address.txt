@@ -1,0 +1,30 @@
+			Call-By-Address(CBA)                                                            Return-By-Address(RBA)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1) main()												         1)   int*  f1()
+    {													               {
+         int   a = 25;												     static  int   a=25;
+         f1(&a);       				  								     return  &a;
+    }														       }
+    void  f1(int  *p)											      main()
+    {														      {
+      	printf("%d",*p);											    int*  p = &a;
+    }															    printf("%d",*p);
+          													      }
+
+2) Sending  address  to  function  is  known  as  CBA	              2) Returning  address  from  function  is  known  as  RBA
+     Eg :  f1(&a);   ----> Address  of    variable  'a'  is  		                   Eg :  return  &a; ---> Addrees  of  variable   'a'  is
+                                    sent  to  f1    function.									     returned  to  calling  function
+     Therefore  f1  is  CBA  function					                   Therefore  f1  is  RBA  function
+
+3) void   f1(int  *p)  ----> *  in  the  parameter  is  CBA		    3) int*   f1()   ---->  *  in  the  return  type  is  RBA
+    {                                                                                                           {
+    }													         }
+
+4) Address  of  local   variable  can  be   sent  to  the                 4) Return  address  of  static  variable  only
+    function										               Eg:  return  &a;  ---->  'a'  must  be  static  variable  only
+    Eg : f1(&a); ---> 'a'  need  not  be  static  variable
+
+5) Calling  function  variable   can  be  accessed  by                 5) Called  function  variable   can  be  accesed  by
+    called  function  indirectly  through   pointer                              calling    function  indirectly  through pointer
+    Eg:  f1(&a);  ---> f1  can  access  variable   'a' 			      Eg:  return  &a;  ---> Calling  function  can  access
+	       		        indirectly  by    *p										         variable  'a'  indirectly  by  *p
