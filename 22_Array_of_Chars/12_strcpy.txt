@@ -1,0 +1,13 @@
+	      char    a[4]						      			char    *a
+  	      strcpy(a , "Hyd")								a = "Hyd"
+----------------------------------------------------------------------------------------------------------------------------------------------
+1) String  is  copied  due  to  strcpy()				1)  Address  is  copied  due  to  =  operator
+
+2)  Array  contains  string						2)  pointer  points  to  string
+
+3)  char    *a;								        3)  char    a[4];
+     strcpy(a , "Hyd");    --->   'a'  must  be  array		      a = "Hyd";  --->  Error  becoz   addess  can  not  be  modified
+					      but  not  ptr
+
+4) How   to   copy   string    to   an   array  ?                4)  How  to  copy  string  to  a  pointer ?  ---->
+    ---->  strcpy( array , string)									 pointer = string
