@@ -1,0 +1,8 @@
+String  functions
+---------------------------
+1)  strlen()
+2)  strcpy()
+3)  strrev()
+4)  strcat()
+5)  strcmp()
+			They  are  defined  in  <string.h>  file
