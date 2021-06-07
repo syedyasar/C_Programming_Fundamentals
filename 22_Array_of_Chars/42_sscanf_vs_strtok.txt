@@ -1,0 +1,10 @@
+				        sscanf()							                                                strtok()
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1) sscanf  is  used  when  number  of  tokens           1) strtok  is  used   when  number  of  tokens  is  a   variable
+    is  fixed  i.e.  3  tokens					             i.e.  n  number  of  tokens
+
+2) sscanf   is  used  only   once   to   retrieve            2) strtok  is  used   multiple  times  until  it  returns  NULL
+    all  the  tokens    						             i.e  It  returns  one  token  at  a  time
+
+3)  It  is  defined  in   <stdio.h>  file                           3)  It  is  defined  in <string.h>  file
+
