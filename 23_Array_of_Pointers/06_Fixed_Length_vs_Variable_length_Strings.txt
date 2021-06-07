@@ -1,0 +1,20 @@
+	      Array  of  fixed  length  strings						Array  of  variable  length  strings
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1)  char  a[5][20];										1)  char  *a[5];
+     Array  can  hold  5  strings  and  each  string		             Array  can  hold  5  strings  and  each  string
+     can  hold  20  characters						             can  hold  any  number  of  characters
+
+2)  Array  contains  strings							       2)  Array  contains  addresses  of  strings
+
+3)  sizeof(a)  is  5 * 20 * 1 =  100B					       3)  sizeof(a)  is  5*8=40B
+     Array  'a'  takes  100B  of  memory  space	 	                    Array  'a'  takes  40B  of  memory  space
+
+4) Possibility  of  memory  wastage  when  string                   4)  No  memory  wastage  becoz  string  length
+    contains  <  20  characters							     is  not  specified
+
+5)  This  is  useful  for  representing  equal  length	               5) This  is  useful  for  representing  different   length
+     strings  i.e. "Sun" , "Mon" , .... "Sat" 			                    strings
+     i.e . char  a[7][4];								            i.e. names  of  classmates
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Access  is  same  in  both  the  cases  but  representations  are  different.
+i.e.  a[i]  is  ith  string,  a[i][j]  is  jth  char  of  ith  string  in  both  the  cases
