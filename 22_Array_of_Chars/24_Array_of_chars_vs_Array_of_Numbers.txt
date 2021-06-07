@@ -1,0 +1,21 @@
+	Array  of  characters										Array  of  numbers
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1) char  a[4];										  1)  int  a[4]
+    Array  'a'  can  hold  3  characters and  one  location         Array  'a  can  hold  4  numbers  and  there is no  ''0'
+    is  left  for  '\0'
+
+
+2) There  is  '\0'  at  the  end  of  char  array			2) There  is  no  '\0'  at  the  end  of  int  or  float  array
+                     		                                                                     i.e. int or float  array  can  not  contain  character(i.e. null  character)
+
+3) a[i]  is  each  character  of  string      			         3) a[i]  is  each  element(number)  of  array
+
+4) Process  each  char  of  array  until  '\0'  is  reached    4) Process  each  element  of  array  until  i = n
+    for(i = 0 ; a[i] != '\0' ; i++)							      for(i = 0 ; i <= n - 1 ; i++)
+    {									                              {
+    }											              }
+
+5) One  parameter  is  enough  to  send  array  to  the       5) 2  parameters  are  required  to  send  array  to  the
+    function										       function
+    Eg:  f1(a);  --->  where  'a'  is  address  of  array 		       Eg :   f1(a,n); --->   where  'a'  is  address  of  array
+													   			      and     'n'  is   size  of  array
