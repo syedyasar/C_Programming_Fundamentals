@@ -1,0 +1,18 @@
+             char  a	                                            char    a[4]					char*    a[4]
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1) It  is  character  declaration	  1)  It  is  string  declaration			1) It  is  array  of  strings
+
+2) Variable  'a'  can  hold  single      2)  Array  'a'  can  hold  single  string    2) Array  'a'  can  hold  4  strings
+    character                                           where  4  is  number  of  chars  in         where  4  is  number  of  strings
+                                                               the  string  including  '\0'
+
+3) sizeof(a)  is  1B                             3)  sizeof(a)  is  4*1=4B		  	       3) sizeof(a)  is  4 * 8 = 32B
+    Variable  'a'  takes  1B  of                  Array  'a'  takes  4B of  memory           Array  'a'  takes  32B  of   memory
+    memory  space							space						       space
+
+4) Type  of  'a'  is  char	                  4) Type  of  'a'  is  char*  and                 4) Type  of  'a'  is  char** ,  Type  of
+                                                              type  of  a[i]  is  char	                         a[i]  is  char*  and type  of  a[i][j]  is  char
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+consider  char*    a[4];
+a[0] , a[1] , a[2] , a[3]  are  addresses  of  strings and  type  is  char*.
+a , a + 1 , a + 2 , a + 3  are  addresses  of  addresses  and  type  is  char**
