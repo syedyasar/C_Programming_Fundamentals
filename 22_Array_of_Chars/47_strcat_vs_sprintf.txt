@@ -1,0 +1,11 @@
+	              strcat()											sprintf()
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1)  It  can  join  strings  only							1)  It  can  join  numbers , strings  and  both
+
+2)  It  can  join  only  2  arguments                       2)  It  can  join  any  number  of  arguments
+
+3)  Unformatted  function						            3)  formatted  function
+
+4) Result  is  stored  in  same  array  replacing		       4)  Result  is  represented  in  a  different  array
+    original   string									    Eg :  sprintf(array , "formats" , var1 , var2 , var3, ...);
+    Eg : strcat(a , b);
