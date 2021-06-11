@@ -1,0 +1,96 @@
+Pointer  to  function
+----------------------------------
+1) p = fact;  --->  Address  of  fact  function  is  assigned  to  p.  So  'p'  points  to  fact  function
+
+2) p  = &fact;    --->  Function  name  itself  is  address and    hence      &  is  not  required  for  function
+
+3) p = fact();  --->  It  becomes  a  function  call  to  fact  due  to  ()  but  we  wish  to  assign  address  of  the
+                              function  to  p.  Hence  omit  ()
+
+Note:
+Address  of  variable  is  &variable
+Address  of  pointer  is  &pointer
+Address  of  structure    is  &structure
+Address  of  union    is  &union
+Address  of  array    is    array  name  it  self  (&array  is  also  ok)
+Address  of  function    is    function  name  it  self  (&function  is  also  ok)
+
+Pointer  Declaration
+----------------------------------
+1) double  brackets  are  mandatory  to  declare  pointer  to  function
+
+2) int  (*p)(int); --->  p  can  point  to  that  function  which  has  an  int  parameter  and  returns  an  int  value.
+				 Function  fact  has  an  int  parameter  and  returns  an  int  value.
+                                 So  p  can  point  to    fact  function
+
+3)  int  (*p)(int , int);  --->  p  can  point  to  that  function  which  has  2  integer  parameters  but  function  fact
+				           has   only  one    int  parameter.  So  p  can  not  point  to  fact  function.
+                                           p =  fact   leads   to   error
+
+4) int  (*p)(float);  --->  p  can  point  to  that  function  which  has  float  parameter  but  function  fact  has  int
+				      parameter.  So  p  can  not  point  to  fact  function.
+
+5) float  (*p)(int);  --->  p  can  point  to  that  function  which  returns    float  but  function  fact  returns  int.
+				      So  p  can  not  point  to  fact  function.
+
+6) Thus  Signature  of  the  function  and  pointer  declaration  must  match
+     i.e.  int   fact(int);  ---->   Function   signature
+            int   (*p)(int);   ---->  Pointer  declaration
+
+Function    call
+------------------------
+Function    can  be  called  in  2  ways
+1) Direct  call    --->  Calling  function  by  name  is  direct  call
+     Eg:  fact(3)  is  a  direct  call
+
+2) Indirect  call  -->  Calling  function  through  pointer  is  indirect  call
+    Eg:  p(4)    --->  Executes  that  function  where  p  points.
+                             Since  'p'  points  to  fact  function,  it  is  called  thru  pointer   'p'  and    4  is  sent  to  the  function.
+                             Function  returns  4!  i.e.  24
+
+
+What  is  the  difference  between  p  and  *p
+-----------------------------------------------------------------------------
+1)  p  is  pointer   to  function  and  *p  is  function  itself
+
+2)  *p  means    that   function   where   p    points   i.e.    fact  function.
+
+3) (*p)(5)    --->  fact  function  is  executed   and  5  is  sent  to  the  function.  Function    returns  5!  i.e. 120
+
+4) (*p)(5)  is  also  indirect  call
+
+
+
+
+What  is  the  difference  between:
+1)  int   *p;   --->   pointer  to  integer
+
+2)  int  (*p)(int);  --->   pointer  to  function   due   to   double  brackets
+
+3)  int  *p(int); --->   Not  a  pointer
+
+1)  consider  int  *p;    ---->      p  can  point   to   an   int  variable  or  int  array
+
+2)  consider  int  (*p)(int);  ---->  p  can  point  to  that  function  which  has  an  int  parameter  and  returns   an    integer
+
+3)  int  *p(int);    --->  Function   prototype i.e.   p  is  function   with   parameter  int  and  return    type  is  int*
+     Eg  :   int*    p(int  x)
+               {
+                    return  &x;
+	       }
+
+
+What  is  the  difference  between  :
+1)  x=*p(5)  ---> Function  p  is   executed
+
+2)  x=(*p)(5) --->  function  *p  is   executed
+
+1)  x = *p(5)  --->  Function  'p'  is  executed   and  5  is  sent  to  the  function.  Function  must  return  address  but
+                             not   value,  due  to  *
+			     Let  function  p  returns  address  1000,
+                             It  becomes  x = *1000---->  value  at  address  1000  is  assinged  to  variable  'x'
+
+2)  x = (*p)(5)  ---->  Function   *p   is  executed.   If  p  points  to  fact  function,  *p  is  nothing  but  function  fact
+                               and  5  is   sent  to    the  function.
+			       Function  returns  5!  i.e.  120
+                               So  x = 120
