@@ -1,0 +1,9 @@
+		int*    a[3]                                                                     int  (*a[3])(int)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1)  Array  of  ptrs  where  each  ptr  points           1) Array  of  ptrs  where  each  ptr  points  to   function  and
+     to  an  integer  value                                          each  function  has  an  int parameter and  returns  an  int  value
+
+2) a[i]  is  ptr  and  *a[i]  is  value			        2)  a[i]  is  ptr   and   *a[i]  is  function
+    i.e.  *a[0]  is  10							     i.e  *a[0]  is  f1  function,
+           *a[1]  is  20							           *a[1]  is  f2  function
+           *a[2]  is  15							           *a[2]  is  f3  function
