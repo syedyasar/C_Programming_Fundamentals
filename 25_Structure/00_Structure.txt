@@ -1,0 +1,75 @@
+Structure
+----------------
+1)  It  is  a  collection  of  members  which  are  of  different  types
+
+2)  It  can  hold  different  types  of  values  which  is  not  possible  with   array
+
+3)  Array  and  structure  are    quite  opposite
+     i.e.  Array  is  a    homogeneous  collection  but  structure  is  hetrogeneous  collection
+
+4)  There  are  2  parts
+     a)  Structure  definition
+     b)  Structure  declaration
+
+5) Structure  can  not  be  declared  without  definition
+     i.e.  define   first  and  then  declare
+
+Structure  definition
+-----------------------------------
+struct  Emp  --->  Structure  Definition
+{
+	int        empno;
+	char    ename[20];
+	float      sal;
+	char      gender;
+};
+
+1) This  is  called  structure  definition
+
+2) It  informs  system  about  members  of  the  structure
+
+3) empno , ename , sal  and  gender  are  members  of  the  structure but    not  variables
+
+4) No  memory  is  allocated  to  members  when  structure  is  defined
+
+5) 0  bytes  of  memory  is  allocated  when  structure  is  defined
+
+6) struct  is  a  keyword  and  Emp  is  user  defined  word
+
+7) Emp  is  structure  tag  and  structure  is  identified  by  tag
+
+8) No  2  structures  can  have  same  tag
+    i.e.  structures  are  distinguished  by  tags
+
+
+Structure  declaration
+-------------------------------------
+1) struct   Emp    a;  --->    This  is  structure  declaration
+
+2)  'a'  is  structure  of  type  Emp
+
+3) Memory  is  allocated  to  members  only  when  structure  is  declared  but  not  when  it  is  defined
+
+4)  Size  of  a  structure  is  sum  of  sizes  of  members
+     i.e.  sizeof(struct  Emp)  is  4 + 20 + 4 + 1 = 29B
+
+5) Structure  'a'  is  created  and  29B  of  memory  is  allocated
+    i.e. First  4B  for  empno , Next 20B  is  for  ename , Next  4B  is  for  sal  and  next  1B  is  for  gender
+
+6) structure  'a'  initially  contains  garbage  values
+
+7) a . empno , a . ename , a . sal  and  a . gender  are  members  of  the  structure
+
+8)  '.'  is  member  access  operator
+     i.e.  '.'  operator   is   used   to  access  members  of  the  structure
+     Syntax  --->    structure.member
+
+Note:
+1)  []  operator  is  required  to  access  array
+
+2)  '.'  operator  is  required  to  access  structure
+
+3) []  is  called  subscript  operator  and  '.'  is  called  member  access  operator
+
+4) There   is  no  keyword  to  declare  variable , pointer and  array  but  there   is  struct  keyword  to   define
+    and  declare  structure
