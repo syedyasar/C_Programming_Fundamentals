@@ -1,0 +1,65 @@
+Encapsulation
+------------------------
+1)  struct  emp
+     {
+	   int  empno;
+	   char  ename[20];
+	   float  sal;
+      };
+
+2) Integration  of  related  data  is  known  as  encapsulation
+    Eg:  Employee  related  data  such  as  empno , emp  name  and  salary  are  integrated  to  form  a
+           single  unit  i.e.  structure
+
+3) Encapsulation  is  possible  by  using  structure
+
+4) Representation  of  data  in  the  form  of  variables  is  not  encapsulation
+
+5) Use  different  structures  to  represent  employee , student , customer , triangle , rectangle  and  so  on
+
+6)	struct      bad
+	{
+		int  rollno;
+		char  studname[20];
+		int  empno;
+		char  empname[20];
+	};
+
+7) Representing  emp  data  and  stud  data  in  the  same  structure  is  a  bad  encapsulation.
+
+8)  Integrate  data  but  related  data.
+     student   data  and  employee  data  are  no  way  related.
+
+9)  Use  2  different  structures  to  represent  student  and  employee
+
+Note:
+1)  laptop  computer  supports  encapsulation  but  not  desktop  computer
+
+2)  IC  chip  supports  encapsulation
+
+
+Abstraction  and  ADT(Abstract  Data  Type)
+-------------------------------------------------------------------------
+1)	struct  emp
+	{
+		int  empno;
+		char  ename[20];
+		float  sal;
+	};
+
+2)  Hiding  internal  details  of  the  structure  from  end  user  is  known  as  abstraction.
+
+3)  Internal  details  like  names  of  the  members,  their  datatypes,  number  of  members  and  so  on   are
+     hidden
+
+4)  Client  can  use  structure  but  internal  details  of  the  structure  are  hidden   from  the  client
+
+5)  int + char[] + float = struct  emp
+     i.e.    3  datatypes  are  combined  to  form  a  new  data  type   struct  emp
+
+6)  struct  emp  is  called  ADT
+
+Note:
+1) int , float , char  are  PDT's(Primitive  Data  Types)
+
+2) com , date , stud  are  ADT's  (Abstract  Data  Types)
