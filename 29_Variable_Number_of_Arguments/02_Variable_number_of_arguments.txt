@@ -1,0 +1,94 @@
+Function  with  variable    number   of  arguments  (var-arg  function)
+-----------------------------------------------------------------------------------------------------------------
+1) sqrt  and  pow  are  functions  with  fixed  number  of  arguments,
+    scanf  and  printf  are  function  with   variable  number  of  arguments.
+
+2) ...  is  used   in  the  function  header  for  var-arg  function
+
+3)  ...  means  any  number    of  argumnets  can  be  passed  from  the  function  call
+
+4) Following  3  macros  are  used   to  design  a  function  with  variable  number  of  arguments.
+    a)  va_list
+    b)  va_start
+    c)  va_arg
+         where  va  is  variable   number  of  arguments.
+
+5) They  are  predefined  macros  in  <stdarg.h>
+
+
+va_list
+------------
+1)  va_list    p;  --->  p  is   a   variable    of  type  va_list
+
+2)  'p'   contains  address  even  though  it  is  not  a  pointer
+
+3)  va_list   p;  ---->  declaration  statement
+
+4) 'p'  initially  contains  garbage  address
+
+va_start
+--------------
+1) va_start(p , last  parameter  of  function  header);
+
+2) It  is  an  initialization  statement
+
+3) va_start  can  not  be  used  without  va_list
+
+4) Consider  function  call  avg(4 , 10 , 20 , 15 , 18);  ---> 1st  parameter 4  is  number  of  parameters  and
+                                                                                            rest  are  parameters
+
+5) First  parameter  4  is  copied  to  formal  parameter  'n'
+    Eg :  float  avg(int  n , ...)  --->  'n'  is   4
+            {
+            }
+
+6) va_start(p , n);  --->  'p'  points  to  first  parameter  of  function  call   becoz   'n'    is   first  parameter  value    4
+
+
+va_arg
+-----------
+1) va_arg(p , datatype);
+
+2) It  is  used  to  get  next  argument  from    the  function  call
+
+3) It  must  be  used  in  a  loop  to  get  each  argument  of  the  function  call
+
+4) Conside  function  call  avg(4 , 10 , 20 , 15 ,  18);
+
+5) First  parameter  4  is  copied  to  formal  parameter  'n'  and  remaining  parameters  are  ignored
+    becoz   corresponding    formal  parameters  are  missing
+
+6) However  we  can  access  them    through   va_arg
+                      Iteration    va_arg(p , int)  returns
+	          --------------------------------------------------------
+	                    1              10
+		            2              20
+		            3              15
+		            4              18
+                      ---------------------------------------------------
+
+7)  va_arg  can    not  be  used  without  va_start
+
+8) Thus  they  are  interdependent  macros
+
+9) 	Actual  parameter		va_arg(p,datatype)
+	------------------------------------------------------------------------
+	Integer  or character	        va_arg(p , int)
+	float  or  double			va_arg(p , double)
+	long 					va_arg(p , long)
+        string					va_arg(p , char*)
+        -----------------------------------------------------------------------
+
+10) va_arg(p , float)  and  va_arg(p , char)  are  invalid
+
+
+	 void  f1(int  x)							                             void  f1(int x , ...)
+ ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1) It is function with fixed number  of	arguments	1) It is a function with variable number of  arguments
+
+2) Send single argument to the function			2) Send any number  of argumnets  to  the  function
+    Eg:  f1(25)								            Eg: f1(10 , 20 , 30 , 40 , 50 , ....... )
+           f1(10 , 20);  --->  Error
+
+3) f1 can not use va_list , va_start , va_arg		        3) f1  must   use  va_list , va_start and va_arg
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
