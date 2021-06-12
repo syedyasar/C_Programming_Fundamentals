@@ -1,0 +1,35 @@
+	Structure													Union
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1) struct  emp										  1)  union  emp
+    {						 						       {
+       	short  empno;											short  empno;
+	float  sal;										                float  sal;
+	char  gender;										        char  gender;
+    };													};
+    This  is  structure  definition							This  is  union  definition
+
+2)  struct  emp  a;									2) union  emp  a;
+     This  is  structure  declaration		   			            This  is  union  declaration
+
+3) sizeof  a  structure  is  sum  of  sizes  of  members		3) sizeof  a  union  is  largest  size  of  the  members
+     i.e. sizeof(struct  emp)  is  2+4+1=7B           			    i.e. sizeof(union  emp)  is  max(2,4,1)=4B
+
+4) First  2B  is  empno,  next  4B  is  sal,			        4) First  2B  is   empno,  first  4B  is   sal,
+    next  1B  is  gender					                            First  1B  is    gender
+
+5) It  can  hold  multiple  values				                5)  It  can  hold  single  value
+
+6) When  value  is  represented  in  a  member,        		6)  When  value  is  represented  in  a  member,
+    other  members  are  not  affected				             other  members    are  affected
+
+7) All  the  members  can  be  accessed			        7) Only  one  member  can  be  accessed  at  a  time
+    simultaneously
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Data  representation  is  always  from  1st  byte  in  case  of  union
+
+
+Disadvantage    of  Union
+-------------------------------------------
+It  is  possible  to  access  only  one  member  at  a  time.  Hence  unions  are  used  in  those  applications
+where  only  one  member  need  to  be  accessed  at  a  time.  Therefore    unions  are  seldom  used  in
+progamming
