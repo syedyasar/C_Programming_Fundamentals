@@ -1,0 +1,61 @@
+How  to  access   variable , array , string , structure  and  function   through  pointer ?
+-----------------------------------------------------------------------------------------------------------------------------------------------
+1)  Which  operator  is   used   to  access  variable   through   pointer  --->   *  operator  i.e.  *p
+
+2)  Which  operator  is   used   to  access  array   through   pointer  --->   []  operator  i.e.  p[i]
+
+3)  Which  operator  is   used   to  access  string   through   pointer  --->   []  operator  i.e.  p[i]
+
+4)  Which  operator  is   used   to  access  structure    through   pointer  --->   ->  operator  i.e.  p -> member
+
+5)  Which  operator  is   used   to  call  function  through   pointer  --->   ()  opeator  i.e.  p();
+
+
+Types of  Pointers
+-------------------------------
+1)  int   *p;  --->  p  can  point  to  either  int  variable   or  int  array
+
+2)  char  *p;    --->  p  can  point  to  either  character  or  string
+
+3)  int**  p;    --->  p  can  point  to  another  pointer
+
+4)  int  (*p)();    --->  p  can  point  to  that  function  which  has  no  parameters  and  returns   an  integer
+
+5)  struct  emp  *p;    --->  p  can  point  to  any  emp  structure
+
+6)  FILE*  p;  --->  p  can  point  to  file
+
+
+How  to  assign  pointer  to  different   entities ?
+---------------------------------------------------------------------------------
+1) How  to  assign  pointer  to  variable ?  ----->  pointer = &variable
+
+2) How  to  assign  pointer  to  character   ?  -----> pointer = &charvariable;
+
+3) How  to  assign  pointer  to  array  ?  ----->  pointer = arrayname  (or)  pointer =  &arrayname[0];
+                                                                          (or)  pointer =  &arrayname;
+
+4) How  to  assign  pointer  to  string   ?  ----->  pointer = "Hyd"  (or)  pointer = chararray;
+
+5) How  to  assign  pointer  to  another  pointer  ?  ----->  pointer = &someotherpointer;
+
+6) How  to  assign  pointer  to  function  ?  -----> pointer = functioname;  (or)  pointer = &functionname;
+
+7) How  to  assign  pointer  to  structure  ?  ----->  pointer = &structure;
+
+8) How  to  assign  pointer  to  file  ?  ----->  p = fopen("a.txt" , "r")  --->  p  points  to  a.txt   file
+
+
+What  is  *p ?
+-----------------------
+1) What  is   *p   when    p  points  to  variable  (or)  array ?  ----->  value
+
+2) What  is  *p   when   p  points  to  character  (or) string ?  ----->  character
+
+3) What  is   *p   when   p  points  to  structure ?   ----->  structure
+
+4) What  is  *p   when   p  points  to  function ?   ----->  function
+
+5) What  is  *p   when   p  points  to  another  pointer ?  ----->  Address  (or)  pointer
+
+6) In  general,  *p  is  value , character ,  structure ,  function  or  address,  it  all  depends  on  where   'p'   points
