@@ -1,0 +1,21 @@
+fputs()
+------------
+1) puts()  writes  string  to  console(monitor)  but
+    fputs()  writes  string  to  the  file
+
+2) They    are  defined  in  <stdio.h>
+
+3) Open  the  file  in  any  mode  except  "r"  mode  in  order  to  use  fputs()
+
+4) fputs  has  2  parameters
+    a)  string
+    b)  fp  (file  pointer)
+
+5) char  a[] = "Rama  Rao";
+    fputs(a , fp);  --->  Writes  string  in  array  'a'   to  the  file
+
+6) fputs("\n" , fp);  --->  moves  file  pointer  to  the   begining  of  next  line
+
+7) fputs("Hyd\n" , fp);
+    fputs("Sec\n" , fp);
+    fputs("Cyb\n" , fp);  ---->  3  strings  are  written  to  the  file  in  different  lines
