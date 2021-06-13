@@ -1,0 +1,156 @@
+File
+-------
+1) It  is  collection   of   characters  or  records
+
+2) It   is  on  disk  like  harddisk , cd  and  pendrive
+    but  variable,  array,  structure,  pointer  are  in  RAM
+
+3) File  is  used   when  program  demands  too  many  inputs
+
+Advantages
+---------------------
+1) File  is  permanent
+    i.e.  File  is  not  lost  even  after  program    terminates.
+    File  created  by    a  program  can  be  used  by  a  different  program.
+    This  is  in  contrast  to  variable , array  and  structure   which  are  temporary  and    lost  after
+    program  terminates.
+    Variable , Array  and  Structure  created  by  a  program  can  be  used  by  same  program  only
+
+2) File  is  umlimited
+     i.e.  It  can  hold  any  amount  of  data.
+     File  never  becomes  full
+     Array  and  structure  are  limited
+     i.e.  If  array  size  is  5,  it  can  hold  5  elements  only.
+     Array  becomes  full  after  representing  5  elements
+
+3) I/O  operations  can  be  performed  on  file.
+    It  is  possible  to  read  from  the  file  and  write  to  the  file.
+    i.e.  Read  inputs  from  a  file,  process  them  and  write  results  to  a  different  file
+
+Disadvantage  of  file
+-----------------------------------
+Slow  in  access    becoz    file  is  on  disk  but
+variable , array  and  structure  are    fast  in  access    becoz  they  are  in  RAM
+Therefore  minimize  file  access
+i.e.  Don't    access  file  frequently
+
+Opening  a  file
+-------------------------
+1) fopen  function  opens  a  file
+
+2) It  is  defined  in  <stdio.h>  file
+
+3) Operations  can  not  be  performed  on  the  file  without  opening  the   file
+    i.e.  Open  the  file  first  and  then  perform  operations  like  read , write , rewind  and  so  on
+
+4) File  is  opened  internal  to  the  system  but  not  on  monitor
+
+5) fopen  function  has  2  parameters
+    a) file  to  be  opened
+    b) mode  in  which  file  is  to  be  opened
+
+6) Return  type  of  fopen  function  is  FILE*
+    i.e.  fopen  function  not  only  opens  the  file  but  also  returns  address  of  the  file
+
+7) FILE  is  a  predefined  macro  in  <stdio.h>
+
+8) FILE*   fp  =  fopen("a.txt" , "r");  --->  File  a.txt  is  opened  in  read  mode  and  address  of  the  file  is
+                                                                returned  to  fp.
+
+9) So,  fp  points  to  file  a.txt
+
+10) It  is  a  read-only  file  i.e.  Not  possible  to  write  to  the  file
+
+
+Mode
+---------
+A  file  can  be  opened  in  any  one  of  the  following  6  modes
+
+   Mode   	Operations
+----------------------------------------------
+      r        Read
+     w        Write
+     a         Append
+     r+        Read , Append  and  Modify
+     w+      Read , Append  and  Modify
+     a+       Read  and  Append
+----------------------------------------------------
+When  a  file  is  opened  in   "r+"  mode , 3  operations  can  be made
+1) Read  from  the  file
+
+2) Append  data  to  the  file
+
+3) Modify  data  of  the  file
+
+
+Existing  file:
+---------------------
+Case  1 :  Contents  of  the  file  is  lost  after   the   file  is  opened  in   w  and  w+ modes  and  File  becomes  empty
+
+Case  2 :  File  contents  are  not  lost   when  file  is  opened   in   r  ,  a  ,   r+  and  a+  modes
+
+
+Non-existing  file
+-----------------------------
+Case  1 :  System  automatically  creates  a  new  file  when  we  try  to  open  a  non-existing  file  in
+                w , a , w+  and  a+  modes.  fp  points  to  new  file
+
+Case  2:  System  can  not  open  the  file  in   r  and  r+   modes   becoz   file  is  not  existing  and
+               fopen  function    returns  NULL
+
+
+                  w   mode										a  mode
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1) Contents  of  the  file  is  lost  after  file  is  opened       1) Contents  of  the  file  remain(not  lost)  after
+												   file  is  opened
+
+2) Data  is  written  into  empty  file				       2) Data  is  written  into  existing  file
+
+3) Data  is  written  from  the  begining  of  file		       3) Data  is  written  at  the  end  of  file
+
+4) w  mode  is  used   for  non-existing  file			       4)  a  mode  is  used   for  existing  file
+
+
+
+			r+  mode											w+  mode
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1) Contents  of  the  file  is  not  lost  after  file  is  opened   1) Contents  of  the  file  is  lost  after  file  is  opened
+
+2) It  is  used  to  open  existing  file  so  that		          2) It  is  used  to  open  non-existing  file  so  that
+    contents  are  not  lost							      system  automatically  creates  a  new  file
+
+3) read , append  and  modify  operations  can	                  3) Same  operations  can  be  performed  on  new  file
+    be   made   on  existing  file
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Closing  file
+---------------------
+1) fclose(fp);
+
+2) fclose  function  closes  that   file  where   fp   points
+
+3) File  a.txt  is  closed  when  fp  points  to    a.txt  file
+
+4) Not  possible  to  perform  operations  on  the  file  after   the  file  is  closed
+
+5) closing  file  is  optional
+    i.e. System  automatically  closes  the   file  after  program  terminates
+
+6) fclose()  is  defined  in  <stdio.h>
+
+7) fclose("a.txt");  ---> Error  becoz   fclose  demands  fp  but  not  file  name
+
+
+Passing  file  to  a  function
+----------------------------------------------
+1) f1(fp);
+
+2) To  send  file  to  a  function,  just   send  fp
+     i.e. Sending  fp  to  the  function  is  as  good  as  sending  file  to  the  function
+
+3) File  supports  only  CBA  but  not  CBV
+
+4) f1  function  can  modify  contents  of  the  file  and  changes  are  automatically  visible  to   calling  function
+    wihout  return  statement
+
+5) This  is  possible  becoz  address  of  file  is  passed  from  the    function  call
