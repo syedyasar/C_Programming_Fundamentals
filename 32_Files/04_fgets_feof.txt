@@ -1,0 +1,36 @@
+fgets()
+-----------
+1) gets()  reads  string  from  keyboard  and
+    fgets()  reads  string  from  file
+
+2) They  are  defined  in  <stdio.h>
+
+3) Open  the  file  in  any  mode  except  "w"  and  "a"  modes  in  order  to  use  fgets()
+
+4) fgets()  has  3  parameters
+    a) Array  i.e. character  array
+    b) How  many  characters  to  be  read  from  the  file
+    c) fp  (file  pointer)
+
+5) char  a[4];
+     fgets(a , 3 , fp);  --->  reads  3  characters  of  the  file   from  the  current  position   of   fp
+     If  fp  points  to  string  "RAJESH"  in  the  file,  first  3  characters  of  "RAJESH"  are  read  to  array  'a'.
+     i.e.  Array  contains  "RAJ"  and  fp  is  advanced  to  4th  character  i.e.  'E'
+
+6) char  a[11];
+    fgets(a , 10 , fp);  --->  reads  10  characters  of  the  file  from  the  current  position  of  fp
+    If  fp  points  to  string  "RAJESH"  in  the  file,  characters  till  end  of  the  line  are  read  to  array  a.
+    i.e.  Array  contains  "RAJESH\n"  and  fp  is  advanced  to  begining  of  next  line
+
+
+feof()
+---------
+1) feof(fp);
+
+2) It  is  used  to  determine  end  of  the  file  is  reached  or  not
+
+3) It  returns  true  when  fp  points  to  end  of  the  file
+
+4) It  returns  false  when  fp  points  to  begining  or  middle  of  the  file
+
+5) It  is  defined  in  <stdio.h>  file
