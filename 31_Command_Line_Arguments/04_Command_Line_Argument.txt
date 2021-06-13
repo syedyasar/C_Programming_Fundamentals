@@ -1,0 +1,93 @@
+Command  line  arguments (or)  Parameters
+------------------------------------------------------------------------
+1) main  has  2  signatures
+    a)  main()    ---->  No  parameters
+    b)  main(int  argc  ,  char*  argv[])    ---->  2  parameters
+                         (or)
+         main(int  argc , char ** argv)
+
+2) argc  and  argv  are  command  line  arguments  or  parameters
+
+3) They  are  user  defined  words
+     i.e. main(int   x , char*  y[])  ---->  Okay
+
+4) They  are  automatically  initialized  by  OS  as  soon  as  program    is  executed
+
+argc  (argument  counter)
+-------------------------------------------
+1) It  is  an  integer  parameter
+
+2) It  is  number  of  arguments  passed  from  command  line
+
+3) It  is  n + 1  where  'n'  is  number  of  inputs  passed  from  command  line
+
+4) File  name  is  also  counted  and   hence  it  is  n + 1
+
+argv  (argument  vector)
+---------------------------------------
+1) It  is  array  of  strings
+
+2) It  contains  arguments  passed  from  command  line
+
+3) argv[0]  is  path  of  the  file,
+    argv[1]  is  1st  input,
+    argv[2]  is  2nd  input  and  so  on
+
+4) argv   is   arrray   of  strings   becoz   argv[0]  is  filename
+
+5) Subscripts of  inputs  are  1  to  argc - 1  and  file name subscript is  0
+
+6) Inputs  passed  from  command  line  are  represented  in  argv  array  in  the  form  of  strings
+
+7) filename   25   10.8    g    "Rama  Rao"
+          0          1       2      3             4
+    argc  is  4 + 1 = 5
+    argv[0]  is  "c:\sri\filename.exe"
+    argv[1]  is  "25"
+    argv[2]  is  "10.8"
+    argv[3]  is  "g"
+    argv[4]  is  "Rama  Rao"
+
+8) filename   25   10.8   g   Rama  Rao
+         0           1       2     3       4       5
+    argc  is  5 + 1 = 6
+    argv[4]  is  "Rama"
+    argv[5]  is  "Rao"
+
+9) filename
+    argc  is   0 + 1 = 1
+    argv[0]  is  "c:\sri\filename.exe"
+
+How  to  read  inputs ?
+-------------------------------------
+1) There  are  2  ways  of  reading  inputs
+    a) scanf  function  is  used   to  read  inputs
+    b) command  line  is  also  used  for  reading  inputs
+
+2) So  command  line  is  used  as  an  alternative  to  scanf
+
+3) Command  line  is  not  a  good  idea  when  there  are  too  many  inputs  becoz   sending  several   inputs
+    every  time  program  is   executed  is  tedious
+
+4) Command  line  is  used   only  when  there  are  few  inputs
+
+Advantage   of  command  line  inputs
+---------------------------------------------------------------
+Coding  burden  is  reduced
+-----------------------------------------------
+1) Inputs  passed  from  command  line  are  automatically  represented  in  argv  array  without  writing  any  code.
+
+2) Take  inputs  from  argv  array,  process  them  and  display  results.
+
+3) Don't  worry  about  inputs   becoz   they  are   already  in  argv  array
+
+
+Disadvantage   of  command  line
+--------------------------------------------------------
+Interaction  with  user  is  not  possible
+------------------------------------------------------------------
+1) Program  can  interact  with  user  when  printf  and  scanf  are  used.
+
+2) This  is  not  possible  when  inputs  are  read  from  command  line
+
+3) Therefore  inform  to  client  about  order  of  inputs
