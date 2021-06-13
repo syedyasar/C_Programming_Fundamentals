@@ -1,0 +1,32 @@
+Summary of arrays
+-------------------------------
+1)  int  a[5];  --->  Array of numbers
+     char  b[5];  --->  Array  of  characters  i.e. string
+     char*  c[5]; --->  Array  of  strings
+     int*   d[5]; --->  Array  of  pointers
+     struct  emp  e[5];  --->  Array of structures
+     int  f[5][5];  --->  2-d  Array
+
+2) What  is  a[i] ?  --->  Value  or  element
+    What  is   b[i]   ---> Character
+    What  is   c[i] --->  String
+    What  is   d[i] --->  pointer
+    What  is   e[i] --->  structure
+    What  is  f[i][j]  --->  Value  or  element  of  the matrix
+
+3) How  many  values  array  'a'  can  hold  ?  --->  5
+    How  many  characters  array  'b'  can  hold  ?  --->  4  and  leave  one  location   for  '\0'
+    How  many  strings  array  'c'  can  hold  ?  --->  5
+    How  many  pointers  array  'd'  can  hold  ?  --->  5
+    How  many  structures   array  'e'  can  hold  ?  --->  5
+    How  many  elements   array  'f'  can  hold  ?  --->  5 * 5 = 25
+
+4) It  is  only  array  'b'  which  contains  '\0'  but  not  the  rest
+
+5) How  to  initialize  each  array ?
+    int  a[] = { 10 , 20 , 15 , 18};
+    char  b[] = {'H' , 'y' , 'd' , '\0'};   (or)  char  b[] = "Hyd";
+    char*  c[] = {"Hyd" , "Pune" , "Chennai" , "Vijayawada"};
+    int*  d[]  = {a , a + 1 , a + 2 , a + 3};
+    struct  emp  e[] = { {10 , "Rama" , 10000.0} , {20 , "Sita" , 20000.0} , {15 ,"Rajesh" , 15000.0}};
+    int  f[][5] = { {10 , 20} , {30 , 40 , 50} , {60 ,  70 , 80 , 90} , {100 , 110 , 120 , 130 , 140}};
